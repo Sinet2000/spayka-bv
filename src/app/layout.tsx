@@ -41,6 +41,17 @@ export const metadata: Metadata = {
   creator: "Spayka Air Cargo Solutions",
   publisher: "Spayka BV",
   metadataBase: new URL("https://spayka.nl"),
+  manifest: "/manifest.json",
+  appleWebApp: {
+    capable: true,
+    statusBarStyle: "default",
+    title: "Spayka Air Cargo",
+  },
+  formatDetection: {
+    telephone: true,
+    email: true,
+    address: true,
+  },
   openGraph: {
     type: "website",
     locale: "en_US",
@@ -66,6 +77,12 @@ export const metadata: Metadata = {
       "max-image-preview": "large",
       "max-snippet": -1,
     },
+  },
+  viewport: {
+    width: "device-width",
+    initialScale: 1,
+    maximumScale: 5,
+    userScalable: true,
   },
 };
 

@@ -18,27 +18,28 @@ export function MainNav() {
   const [isOpen, setIsOpen] = useState(false);
 
   return (
-    <nav className="sticky top-0 z-50 bg-background border-b shadow-sm">
-      <div className="container mx-auto px-4 py-4">
+    <nav className="sticky top-0 z-50 bg-background/95 backdrop-blur-md border-b shadow-sm">
+      <div className="container mx-auto px-4 py-3 sm:py-4">
         <div className="flex items-center justify-between">
           {/* Logo */}
-          <Link href="/" className="flex items-center gap-3">
+          <Link href="/" className="flex items-center gap-3 min-h-[44px]">
             <Image
               src="/next.svg"
               alt="Spayka Logo"
-              width={120}
-              height={40}
-              className="dark:invert"
+              width={100}
+              height={34}
+              className="dark:invert w-[90px] sm:w-[120px]"
+              priority
             />
           </Link>
 
           {/* Desktop Navigation */}
-          <div className="hidden md:flex items-center gap-8">
+          <div className="hidden lg:flex items-center gap-8">
             {navItems.map((item) => (
               <Link
                 key={item.name}
                 href={item.href}
-                className="text-foreground hover:text-primary transition-colors font-medium"
+                className="text-foreground hover:text-primary transition-colors font-medium relative after:absolute after:bottom-[-8px] after:left-0 after:w-0 after:h-0.5 after:bg-primary after:transition-all hover:after:w-full"
               >
                 {item.name}
               </Link>
@@ -46,9 +47,9 @@ export function MainNav() {
           </div>
 
           {/* Contact Button */}
-          <div className="hidden md:flex items-center gap-4">
+          <div className="hidden lg:flex items-center gap-4">
             <Link href="/contact">
-              <Button className="gap-2 bg-primary hover:bg-primary/90">
+              <Button className="gap-2 bg-primary hover:bg-primary/90 shadow-md hover:shadow-lg transition-all">
                 <MessageSquare className="h-4 w-4" />
                 Contact Us
               </Button>
@@ -56,30 +57,49 @@ export function MainNav() {
           </div>
 
           {/* Mobile Menu */}
-          <div className="md:hidden flex items-center gap-2">
+          <div className="lg:hidden flex items-center gap-2">
             <Link href="/contact">
-              <Button size="sm" className="gap-2">
-                <MessageSquare className="h-4 w-4" />
+              <Button size="sm" className="gap-2 min-h-[44px] min-w-[44px]">
+                <MessageSquare className="h-5 w-5" />
+                <span className="sr-only">Contact</span>
               </Button>
             </Link>
             <Sheet open={isOpen} onOpenChange={setIsOpen}>
               <SheetTrigger asChild>
-                <Button variant="ghost" size="sm">
-                  <Menu className="h-6 w-6" />
+                <Button
+                  variant="ghost"
+                  size="sm"
+                  className="min-h-[44px] min-w-[44px]"
+                >
+                  {isOpen ? (
+                    <X className="h-6 w-6" />
+                  ) : (
+                    <Menu className="h-6 w-6" />
+                  )}
+                  <span className="sr-only">Menu</span>
                 </Button>
               </SheetTrigger>
-              <SheetContent>
-                <div className="flex flex-col gap-6 mt-8">
+              <SheetContent side="right" className="w-[85vw] sm:w-[350px]">
+                <div className="flex flex-col gap-6 mt-12">
                   {navItems.map((item) => (
                     <Link
                       key={item.name}
                       href={item.href}
                       onClick={() => setIsOpen(false)}
-                      className="text-lg font-medium hover:text-primary transition-colors"
+                      className="text-xl font-semibold hover:text-primary transition-colors py-3 border-b border-border min-h-[56px] flex items-center"
                     >
                       {item.name}
                     </Link>
                   ))}
+                  <Link href="/contact" onClick={() => setIsOpen(false)}>
+                    <Button
+                      className="w-full gap-2 mt-4 min-h-[56px] text-lg"
+                      size="lg"
+                    >
+                      <MessageSquare className="h-5 w-5" />
+                      Contact Us
+                    </Button>
+                  </Link>
                 </div>
               </SheetContent>
             </Sheet>

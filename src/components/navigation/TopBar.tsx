@@ -5,25 +5,27 @@ import { LanguageSelector } from "./LanguageSelector";
 
 export function TopBar() {
   return (
-    <div className="bg-secondary text-secondary-foreground py-2 px-4 border-b">
-      <div className="container mx-auto flex flex-wrap items-center justify-between gap-4 text-sm">
-        <div className="flex flex-wrap items-center gap-6">
+    <div className="bg-secondary text-secondary-foreground py-3 px-4 border-b">
+      <div className="container mx-auto flex flex-wrap items-center justify-between gap-2 text-xs sm:text-sm">
+        <div className="flex flex-wrap items-center gap-3 sm:gap-6">
           <a
             href="tel:+31207771234"
-            className="flex items-center gap-2 hover:opacity-80 transition-opacity"
+            className="flex items-center gap-2 hover:opacity-80 transition-opacity min-h-[44px] sm:min-h-0"
           >
-            <Phone className="h-4 w-4" />
-            <span>+31 20 777 1234</span>
+            <Phone className="h-4 w-4 flex-shrink-0" />
+            <span className="hidden sm:inline">+31 20 777 1234</span>
+            <span className="sm:hidden">Call</span>
           </a>
           <a
             href="mailto:contact@spayka.nl"
-            className="flex items-center gap-2 hover:opacity-80 transition-opacity"
+            className="flex items-center gap-2 hover:opacity-80 transition-opacity min-h-[44px] sm:min-h-0"
           >
-            <Mail className="h-4 w-4" />
-            <span>contact@spayka.nl</span>
+            <Mail className="h-4 w-4 flex-shrink-0" />
+            <span className="hidden md:inline">contact@spayka.nl</span>
+            <span className="md:hidden">Email</span>
           </a>
-          <div className="flex items-center gap-2">
-            <MapPin className="h-4 w-4" />
+          <div className="hidden lg:flex items-center gap-2">
+            <MapPin className="h-4 w-4 flex-shrink-0" />
             <span>Schiphol, Amsterdam</span>
           </div>
         </div>

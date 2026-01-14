@@ -63,22 +63,31 @@ export function ContactForm() {
   };
 
   return (
-    <Card>
-      <CardHeader>
-        <CardTitle className="text-2xl">Send Us a Message</CardTitle>
+    <Card className="shadow-lg">
+      <CardHeader className="pb-4 sm:pb-6">
+        <CardTitle className="text-xl sm:text-2xl">Send Us a Message</CardTitle>
       </CardHeader>
-      <CardContent>
+      <CardContent className="px-4 sm:px-6">
         <Form {...form}>
-          <form onSubmit={form.handleSubmit(onSubmit)} className="space-y-6">
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+          <form
+            onSubmit={form.handleSubmit(onSubmit)}
+            className="space-y-4 sm:space-y-6"
+          >
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-4 sm:gap-6">
               <FormField
                 control={form.control}
                 name="name"
                 render={({ field }) => (
                   <FormItem>
-                    <FormLabel>Full Name *</FormLabel>
+                    <FormLabel className="text-sm sm:text-base">
+                      Full Name *
+                    </FormLabel>
                     <FormControl>
-                      <Input placeholder="John Doe" {...field} />
+                      <Input
+                        placeholder="John Doe"
+                        {...field}
+                        className="h-12 text-base"
+                      />
                     </FormControl>
                     <FormMessage />
                   </FormItem>
@@ -90,12 +99,15 @@ export function ContactForm() {
                 name="email"
                 render={({ field }) => (
                   <FormItem>
-                    <FormLabel>Email Address *</FormLabel>
+                    <FormLabel className="text-sm sm:text-base">
+                      Email Address *
+                    </FormLabel>
                     <FormControl>
                       <Input
                         type="email"
                         placeholder="john@example.com"
                         {...field}
+                        className="h-12 text-base"
                       />
                     </FormControl>
                     <FormMessage />
@@ -108,9 +120,16 @@ export function ContactForm() {
                 name="phone"
                 render={({ field }) => (
                   <FormItem>
-                    <FormLabel>Phone Number *</FormLabel>
+                    <FormLabel className="text-sm sm:text-base">
+                      Phone Number *
+                    </FormLabel>
                     <FormControl>
-                      <Input placeholder="+31 20 123 4567" {...field} />
+                      <Input
+                        placeholder="+31 20 123 4567"
+                        {...field}
+                        className="h-12 text-base"
+                        type="tel"
+                      />
                     </FormControl>
                     <FormMessage />
                   </FormItem>
@@ -122,9 +141,15 @@ export function ContactForm() {
                 name="company"
                 render={({ field }) => (
                   <FormItem>
-                    <FormLabel>Company Name</FormLabel>
+                    <FormLabel className="text-sm sm:text-base">
+                      Company Name
+                    </FormLabel>
                     <FormControl>
-                      <Input placeholder="Your Company" {...field} />
+                      <Input
+                        placeholder="Your Company"
+                        {...field}
+                        className="h-12 text-base"
+                      />
                     </FormControl>
                     <FormMessage />
                   </FormItem>
@@ -137,13 +162,15 @@ export function ContactForm() {
               name="serviceType"
               render={({ field }) => (
                 <FormItem>
-                  <FormLabel>Service Type *</FormLabel>
+                  <FormLabel className="text-sm sm:text-base">
+                    Service Type *
+                  </FormLabel>
                   <Select
                     onValueChange={field.onChange}
                     defaultValue={field.value}
                   >
                     <FormControl>
-                      <SelectTrigger>
+                      <SelectTrigger className="h-12 text-base">
                         <SelectValue placeholder="Select a service" />
                       </SelectTrigger>
                     </FormControl>
@@ -173,11 +200,13 @@ export function ContactForm() {
               name="message"
               render={({ field }) => (
                 <FormItem>
-                  <FormLabel>Message *</FormLabel>
+                  <FormLabel className="text-sm sm:text-base">
+                    Message *
+                  </FormLabel>
                   <FormControl>
                     <Textarea
                       placeholder="Tell us about your logistics needs..."
-                      className="min-h-[150px]"
+                      className="min-h-[120px] sm:min-h-[150px] text-base"
                       {...field}
                     />
                   </FormControl>
@@ -188,13 +217,13 @@ export function ContactForm() {
 
             <Button
               type="submit"
-              className="w-full bg-primary hover:bg-primary/90"
+              className="w-full bg-primary hover:bg-primary/90 min-h-[56px] text-base sm:text-lg shadow-md hover:shadow-lg transition-all"
               size="lg"
               disabled={isSubmitting}
             >
               {isSubmitting ? (
                 <>
-                  <Loader2 className="mr-2 h-4 w-4 animate-spin" />
+                  <Loader2 className="mr-2 h-5 w-5 animate-spin" />
                   Sending...
                 </>
               ) : (
