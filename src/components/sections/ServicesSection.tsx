@@ -115,23 +115,23 @@ export function ServicesSection() {
                     style={{ clipPath: "inset(0 0 calc(100% - 3px) 0)" }}
                   />
 
-                  <CardContent className="relative p-6 sm:p-8">
+                  <CardContent className="relative p-4 sm:p-8">
                     {/* Icon Container */}
-                    <div className="relative mb-6">
-                      <div className="w-16 h-16 sm:w-20 sm:h-20 mx-auto bg-gradient-to-br from-primary/20 via-primary/10 to-transparent rounded-2xl flex items-center justify-center group-hover:scale-110 group-hover:rotate-3 transition-all duration-500 shadow-lg">
-                        <Icon className="h-8 w-8 sm:h-10 sm:w-10 text-primary group-hover:scale-110 transition-transform duration-300" />
+                    <div className="relative mb-4 sm:mb-6">
+                      <div className="w-12 h-12 sm:w-20 sm:h-20 mx-auto bg-gradient-to-br from-primary/20 via-primary/10 to-transparent rounded-xl sm:rounded-2xl flex items-center justify-center group-hover:scale-110 group-hover:rotate-3 transition-all duration-500 shadow-lg">
+                        <Icon className="h-6 w-6 sm:h-10 sm:w-10 text-primary group-hover:scale-110 transition-transform duration-300" />
                       </div>
                       {/* Decorative Ring */}
-                      <div className="absolute inset-0 rounded-2xl border-2 border-primary/20 group-hover:scale-125 transition-transform duration-500 opacity-0 group-hover:opacity-100" />
+                      <div className="absolute inset-0 rounded-xl sm:rounded-2xl border-2 border-primary/20 group-hover:scale-125 transition-transform duration-500 opacity-0 group-hover:opacity-100" />
                     </div>
 
                     {/* Content */}
                     <div className="text-center">
-                      <h3 className="text-lg sm:text-xl font-bold text-foreground mb-3 group-hover:text-primary transition-colors">
+                      <h3 className="text-base sm:text-xl font-bold text-foreground mb-2 sm:mb-3 group-hover:text-primary transition-colors">
                         {service.name}
                       </h3>
-                      <div className="h-px w-12 mx-auto bg-gradient-to-r from-transparent via-primary to-transparent mb-3 opacity-50 group-hover:opacity-100 group-hover:w-20 transition-all" />
-                      <p className="text-sm sm:text-base text-muted-foreground leading-relaxed">
+                      <div className="h-px w-12 mx-auto bg-gradient-to-r from-transparent via-primary to-transparent mb-2 sm:mb-3 opacity-50 group-hover:opacity-100 group-hover:w-20 transition-all" />
+                      <p className="text-xs sm:text-base text-muted-foreground leading-relaxed">
                         {service.description}
                       </p>
                     </div>
