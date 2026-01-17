@@ -1,0 +1,202 @@
+{
+  "nav": {
+    "home": "Accueil",
+    "services": "Services",
+    "about": "À propos",
+    "whyUs": "Pourquoi nous",
+    "contact": "Contact",
+    "callUs": "Nous appeler",
+    "contactUs": "Nous contacter"
+  },
+  "topBar": {
+    "phone": "+31 62 858 5428",
+    "email": "contact@spayka.nl",
+    "location": "Heerhugowaard, Pays-Bas"
+  },
+  "hero": {
+    "badge": "Solutions de fret express 24/7",
+    "title": "Solutions de transport rapides et fiables dans toute l’Europe",
+    "subtitle": "Logistique express et critique, disponible 24h/24 et 7j/7",
+    "getQuote": "Demander un devis",
+    "callNow": "Appelez-nous maintenant",
+    "features": {
+      "speed": {
+        "title": "Rapidité",
+        "description": "Livraison express sous 24 à 48 heures"
+      },
+      "price": {
+        "title": "Meilleur prix",
+        "description": "Tarifs compétitifs garantis"
+      },
+      "support": {
+        "title": "Support 24/7",
+        "description": "Toujours disponibles quand vous en avez besoin"
+      }
+    }
+  },
+  "about": {
+    "badge": "À propos de nous",
+    "title": "Spayka Air Cargo Solutions B.V.",
+    "tagline": "L’express sans compromis. La logistique européenne, maîtrisée.",
+    "whoWeAre": "Qui nous sommes",
+    "whoWeAreText": "Entreprise logistique basée aux Pays-Bas, spécialisée dans les solutions de transport express et critique à travers l’Europe. Opérationnelle 24/7 — rapide, structurée et fiable.",
+    "whatWeDo": "Ce que nous faisons",
+    "whatWeDoText": "Solutions logistiques complètes, du transport léger jusqu’au fret aérien intégral",
+    "whereWeOperate": "Zones d’intervention",
+    "specializedEquipment": "Équipements spécialisés",
+    "equipmentText": "Remorques à rouleaux optimisées pour les unités de fret aérien PMC — manutention rapide, temps de chargement réduit et sécurité maximale",
+    "mission": "Notre mission",
+    "missionText": "Fournir des solutions de transport fiables et à haute vitesse à travers l’Europe en combinant logistique intelligente, équipements dédiés et support continu — sans complexité inutile.",
+    "whenMinutes": "Quand chaque minute compte",
+    "weMove": "nous agissons"
+  },
+  "services": {
+    "badge": "Nos solutions",
+    "title": "Nos services",
+    "subtitle": "Solutions logistiques complètes à travers",
+    "expressTransport": "Transport express 24/7",
+    "expressTransportDesc": "Livraison rapide dans toute l’Europe grâce à notre flotte moderne",
+    "airFreight": "Fret aérien (PMC)",
+    "airFreightDesc": "Services de fret aérien prioritaires pour les envois urgents",
+    "seaFreight": "Fret maritime",
+    "seaFreightDesc": "Transport maritime économique pour les volumes importants",
+    "warehousing": "Entreposage",
+    "warehousingDesc": "Solutions de stockage sécurisées avec suivi des stocks en temps réel",
+    "customsClearance": "Dédouanement",
+    "customsClearanceDesc": "Expertise douanière pour un commerce international fluide",
+    "b2b": "B2B & B2C",
+    "b2bDesc": "Solutions logistiques sur mesure pour les entreprises et les particuliers"
+  },
+  "whyUs": {
+    "badge": "Pourquoi nous choisir",
+    "title": "Nous ne concurrençons pas par des promesses",
+    "subtitle": "Nous concurrençons par l’exécution",
+    "speed": {
+      "title": "Rapidité",
+      "subtitle": "Critique signifie réellement critique",
+      "description": "Livraison express sans compromis. Lorsque chaque minute compte, notre flotte dédiée et nos opérations 24/7 garantissent un acheminement au rythme exigé par votre activité."
+    },
+    "price": {
+      "title": "Prix",
+      "subtitle": "Compétitifs, transparents, sans surprises",
+      "description": "Tarification juste et totalement transparente. Aucun frais caché, aucun coût imprévu — seulement une logistique honnête à des tarifs cohérents."
+    },
+    "support": {
+      "title": "Support",
+      "subtitle": "Des personnes réelles, des réponses réelles, 24/7",
+      "description": "Support client continu assuré par des professionnels de la logistique expérimentés. Communication directe, réponses immédiates et solutions au moment où vous en avez besoin."
+    },
+    "whenMinutes": "Quand chaque minute compte,",
+    "weMove": "nous agissons",
+    "tagline": "L’express sans compromis • Rapidité. Contrôle. Fiabilité."
+  },
+  "cta": {
+    "title": "Prêt à expédier ?",
+    "subtitle": "Obtenez un devis en quelques minutes",
+    "requestQuote": "Demander un devis",
+    "callUs": "Appelez-nous maintenant"
+  },
+  "contact": {
+    "pageTitle": "Contact",
+    "title": "Faisons avancer votre marchandise",
+    "subtitle": "Solutions de fret express et critique à travers l’Europe. Disponibles 24/7.",
+    "operating247": "Opérations 24/7",
+    "covering": "Présents dans 5 pays européens",
+    "servicesTitle": "Nos services",
+    "servicesSubtitle": "Solutions logistiques de bout en bout, adaptées à vos besoins",
+    "operateAcross": "Nous opérons dans toute l’Europe",
+    "quoteTitle": "Demander un devis ou poser une question",
+    "quoteSubtitle": "Nos experts logistiques sont à votre disposition. Réponse sous 2 heures pendant les heures ouvrables.",
+    "ctaTitle": "Rapidité. Prix. Support.",
+    "ctaSubtitle": "Quand chaque minute compte, nous agissons. Logistique critique avec des tarifs compétitifs et un support réel 24/7.",
+    "expressTransportDesc": "Des utilitaires aux chargements complets à travers l’Europe",
+    "airFreightDesc": "Fret aérien prioritaire avec opérations sur remorques à rouleaux",
+    "seaFreightDesc": "Transport maritime économique pour les grands volumes",
+    "warehousingDesc": "Stockage sécurisé avec suivi des stocks en temps réel",
+    "customsClearanceDesc": "Expertise douanière et services Douane Loods",
+    "b2bDesc": "Solutions adaptées aux entreprises et aux particuliers",
+    "feature1_1": "Livraison le jour même",
+    "feature1_2": "Suivi en temps réel",
+    "feature1_3": "Chauffeurs dédiés",
+    "feature2_1": "Traitement rapide en aéroport",
+    "feature2_2": "Partenariats avec les compagnies aériennes",
+    "feature2_3": "Solutions critiques",
+    "feature3_1": "Options FCL & LCL",
+    "feature3_2": "Service port-à-port",
+    "feature3_3": "Tarifs compétitifs",
+    "feature4_1": "Contrôle climatique",
+    "feature4_2": "Accès 24/7",
+    "feature4_3": "Conditions flexibles",
+    "feature5_1": "Traitement rapide",
+    "feature5_2": "Support conformité",
+    "feature5_3": "Gestion documentaire",
+    "feature6_1": "Planification flexible",
+    "feature6_2": "Livraison du dernier kilomètre",
+    "feature6_3": "Gestion des retours",
+    "countriesTagline": "Du transport express courte distance aux expéditions critiques transfrontalières",
+    "expressNoCompromise": "L’express sans compromis",
+    "transparentPricing": "Tarification transparente",
+    "realPeople": "Des personnes réelles, des réponses réelles"
+  },
+  "contactInfo": {
+    "title": "Informations de contact",
+    "subtitle": "Nous sommes là pour répondre à vos besoins logistiques. Contactez-nous à tout moment — notre équipe est opérationnelle 24/7 pour les expéditions critiques.",
+    "call247": "Appelez-nous 24/7",
+    "email": "Envoyer un e-mail",
+    "visitOffice": "Visiter notre bureau",
+    "availability": "Disponibilité",
+    "operations247": "Opérations 24/7",
+    "emergencySupport": "Support d’urgence disponible",
+    "urgentSupport": "Besoin d’une assistance urgente ?",
+    "urgentText": "Pour les expéditions urgentes ou critiques, appelez-nous immédiatement :",
+    "available247": "Disponibles 24 heures sur 24, 7 jours sur 7"
+  },
+  "contactForm": {
+    "title": "Envoyer un message",
+    "fullName": "Nom complet",
+    "fullNamePlaceholder": "Jean Dupont",
+    "email": "Adresse e-mail",
+    "emailPlaceholder": "jean@example.com",
+    "phone": "Numéro de téléphone",
+    "phonePlaceholder": "+31 62 858 5428",
+    "company": "Nom de l’entreprise",
+    "companyPlaceholder": "Votre entreprise",
+    "serviceType": "Type de service",
+    "serviceTypePlaceholder": "Sélectionnez un service",
+    "message": "Message",
+    "messagePlaceholder": "Décrivez vos besoins logistiques...",
+    "sendMessage": "Envoyer le message",
+    "sending": "Envoi en cours...",
+    "successMessage": "Merci pour votre message ! Nous vous recontacterons rapidement.",
+    "errorMinName": "Le nom doit comporter au moins 2 caractères",
+    "errorInvalidEmail": "Adresse e-mail invalide",
+    "errorMinPhone": "Veuillez saisir un numéro de téléphone valide",
+    "errorSelectService": "Veuillez sélectionner un type de service",
+    "errorMinMessage": "Le message doit comporter au moins 10 caractères",
+    "serviceAirFreight": "Services de fret aérien",
+    "serviceCustoms": "Dédouanement",
+    "serviceLogistics": "Logistique internationale",
+    "serviceInsurance": "Assurance cargo",
+    "serviceExpress": "Livraison express",
+    "serviceSupplyChain": "Gestion de la chaîne logistique",
+    "serviceOther": "Autre"
+  },
+  "footer": {
+    "company": "Spayka Air Cargo Solutions",
+    "description": "Solutions de fret express et critique à travers l’Europe.",
+    "operating247": "Opérationnel 24/7",
+    "quickLinks": "Liens rapides",
+    "services": "Services",
+    "getInTouch": "Nous contacter",
+    "copyright": "Spayka Air Cargo Solutions B.V.",
+    "developed": "Développé par",
+    "dexlaris": "Dexlaris"
+  },
+  "countries": {
+    "netherlands": "Pays-Bas",
+    "belgium": "Belgique",
+    "luxembourg": "Luxembourg",
+    "germany": "Allemagne",
+    "france": "France"
+  }
+}

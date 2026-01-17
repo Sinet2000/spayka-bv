@@ -1,108 +1,68 @@
 "use client";
 
-import { useState } from "react";
 import Link from "next/link";
 import Image from "next/image";
 import { Button } from "@/components/ui/button";
-import { MessageSquare, Menu, X } from "lucide-react";
-import { Sheet, SheetContent, SheetTrigger } from "@/components/ui/sheet";
-
-const navItems = [
-  { name: "Home", href: "/" },
-  { name: "Services", href: "#services" },
-  { name: "About", href: "#about" },
-  { name: "Why Choose Us", href: "#why-us" },
-];
+import { MessageSquare, Phone } from "lucide-react";
+import { LanguageSelector } from "./LanguageSelector";
+import { useTranslations } from "next-intl";
 
 export function MainNav() {
-  const [isOpen, setIsOpen] = useState(false);
-
+  const t = useTranslations("nav");
+  const tTopBar = useTranslations("topBar");
   return (
     <nav className="sticky top-0 z-50 bg-background/95 backdrop-blur-md border-b shadow-sm">
       <div className="container mx-auto px-4 py-3 sm:py-4">
-        <div className="flex items-center justify-between">
+        <div className="flex items-center justify-between gap-4">
           {/* Logo */}
-          <Link href="/" className="flex items-center gap-3 min-h-[44px]">
+          <Link href="/" className="flex items-center gap-3">
             <Image
-              src="/next.svg"
+              src="/logo/spayka_logo.png"
               alt="Spayka Logo"
-              width={100}
-              height={34}
-              className="dark:invert w-[90px] sm:w-[120px]"
+              width={48}
+              height={50}
+              className="h-10 w-auto sm:h-12"
               priority
             />
           </Link>
 
-          {/* Desktop Navigation */}
-          <div className="hidden lg:flex items-center gap-8">
-            {navItems.map((item) => (
-              <Link
-                key={item.name}
-                href={item.href}
-                className="text-foreground hover:text-primary transition-colors font-medium relative after:absolute after:bottom-[-8px] after:left-0 after:w-0 after:h-0.5 after:bg-primary after:transition-all hover:after:w-full"
+          {/* Right Side - Actions */}
+          <div className="flex items-center gap-2 sm:gap-4">
+            {/* Language Selector */}
+            <LanguageSelector />
+
+            {/* Call Us Button - Hidden on small mobile */}
+            <a href="tel:+31628585428" className="hidden sm:block">
+              <Button
+                variant="outline"
+                className="gap-2 border-red-500 text-red-500 hover:bg-red-50 hover:text-red-600 hover:border-red-600 min-h-[44px] shadow-sm"
               >
-                {item.name}
-              </Link>
-            ))}
-          </div>
+                <Phone className="h-4 w-4" />
+                <span className="hidden md:inline">{tTopBar("phone")}</span>
+                <span className="md:hidden">{t("callUs")}</span>
+              </Button>
+            </a>
 
-          {/* Contact Button */}
-          <div className="hidden lg:flex items-center gap-4">
+            {/* Call Us - Mobile Only (Icon) */}
+            <a href="tel:+31628585428" className="sm:hidden">
+              <Button
+                size="sm"
+                variant="outline"
+                className="min-h-[44px] min-w-[44px] border-red-500 text-red-500 hover:bg-red-50"
+              >
+                <Phone className="h-5 w-5" />
+                <span className="sr-only">{t("callUs")}</span>
+              </Button>
+            </a>
+
+            {/* Contact Us Button */}
             <Link href="/contact">
-              <Button className="gap-2 bg-primary hover:bg-primary/90 shadow-md hover:shadow-lg transition-all">
+              <Button className="gap-2 bg-red-600 hover:bg-red-700 text-white shadow-md hover:shadow-lg transition-all min-h-[44px]">
                 <MessageSquare className="h-4 w-4" />
-                Contact Us
+                <span className="hidden sm:inline">{t("contactUs")}</span>
+                <span className="sm:hidden">{t("contact")}</span>
               </Button>
             </Link>
-          </div>
-
-          {/* Mobile Menu */}
-          <div className="lg:hidden flex items-center gap-2">
-            <Link href="/contact">
-              <Button size="sm" className="gap-2 min-h-[44px] min-w-[44px]">
-                <MessageSquare className="h-5 w-5" />
-                <span className="sr-only">Contact</span>
-              </Button>
-            </Link>
-            <Sheet open={isOpen} onOpenChange={setIsOpen}>
-              <SheetTrigger asChild>
-                <Button
-                  variant="ghost"
-                  size="sm"
-                  className="min-h-[44px] min-w-[44px]"
-                >
-                  {isOpen ? (
-                    <X className="h-6 w-6" />
-                  ) : (
-                    <Menu className="h-6 w-6" />
-                  )}
-                  <span className="sr-only">Menu</span>
-                </Button>
-              </SheetTrigger>
-              <SheetContent side="right" className="w-[85vw] sm:w-[350px]">
-                <div className="flex flex-col gap-6 mt-12">
-                  {navItems.map((item) => (
-                    <Link
-                      key={item.name}
-                      href={item.href}
-                      onClick={() => setIsOpen(false)}
-                      className="text-xl font-semibold hover:text-primary transition-colors py-3 border-b border-border min-h-[56px] flex items-center"
-                    >
-                      {item.name}
-                    </Link>
-                  ))}
-                  <Link href="/contact" onClick={() => setIsOpen(false)}>
-                    <Button
-                      className="w-full gap-2 mt-4 min-h-[56px] text-lg"
-                      size="lg"
-                    >
-                      <MessageSquare className="h-5 w-5" />
-                      Contact Us
-                    </Button>
-                  </Link>
-                </div>
-              </SheetContent>
-            </Sheet>
           </div>
         </div>
       </div>

@@ -1,0 +1,202 @@
+{
+  "nav": {
+    "home": "首页",
+    "services": "服务",
+    "about": "关于我们",
+    "whyUs": "为什么选择我们",
+    "contact": "联系我们",
+    "callUs": "致电我们",
+    "contactUs": "联系咨询"
+  },
+  "topBar": {
+    "phone": "+31 62 858 5428",
+    "email": "contact@spayka.nl",
+    "location": "荷兰 Heerhugowaard"
+  },
+  "hero": {
+    "badge": "24/7 全天候快件货运解决方案",
+    "title": "覆盖全欧洲的快速可靠货运解决方案",
+    "subtitle": "全天候 24/7 提供紧急与时效性物流服务",
+    "getQuote": "获取报价",
+    "callNow": "立即致电",
+    "features": {
+      "speed": {
+        "title": "速度",
+        "description": "24–48 小时内完成欧洲范围内的快件配送"
+      },
+      "price": {
+        "title": "最优价格",
+        "description": "保证具有竞争力的透明价格"
+      },
+      "support": {
+        "title": "24/7 支持",
+        "description": "关键时刻，随时为您提供支持"
+      }
+    }
+  },
+  "about": {
+    "badge": "关于我们",
+    "title": "Spayka Air Cargo Solutions B.V.",
+    "tagline": "无妥协的快运服务，真正专业的欧洲物流。",
+    "whoWeAre": "我们是谁",
+    "whoWeAreText": "总部位于荷兰的物流公司，专注于欧洲范围内的快件及高时效性货运解决方案。全天候 24/7 运作 —— 高效、有序、可靠。",
+    "whatWeDo": "我们的服务",
+    "whatWeDoText": "从厢式货车运输到完整航空货运的端到端物流解决方案",
+    "whereWeOperate": "业务覆盖区域",
+    "specializedEquipment": "专业设备",
+    "equipmentText": "专为 PMC 航空货运单元优化的滚装拖车 —— 装卸快速、缩短操作时间、最大化安全性",
+    "mission": "我们的使命",
+    "missionText": "通过智能物流、专业设备和持续支持，为欧洲客户提供高速、可靠的货运解决方案 —— 拒绝不必要的复杂流程。",
+    "whenMinutes": "当每一分钟都至关重要时",
+    "weMove": "我们立即行动"
+  },
+  "services": {
+    "badge": "我们的解决方案",
+    "title": "我们的服务",
+    "subtitle": "覆盖欧洲的综合物流解决方案",
+    "expressTransport": "24/7 快件运输",
+    "expressTransportDesc": "依托现代化车队，实现欧洲范围内的快速运输",
+    "airFreight": "航空货运（PMC）",
+    "airFreightDesc": "为时效敏感货物提供优先航空运输服务",
+    "seaFreight": "海运服务",
+    "seaFreightDesc": "适用于大宗货物的高性价比海运方案",
+    "warehousing": "仓储服务",
+    "warehousingDesc": "安全仓储，并提供实时库存追踪",
+    "customsClearance": "清关服务",
+    "customsClearanceDesc": "专业报关服务，确保国际贸易顺畅进行",
+    "b2b": "B2B 与 B2C",
+    "b2bDesc": "为企业及个人客户量身定制的物流解决方案"
+  },
+  "whyUs": {
+    "badge": "为什么选择我们",
+    "title": "我们不靠承诺竞争",
+    "subtitle": "我们靠执行力取胜",
+    "speed": {
+      "title": "速度",
+      "subtitle": "真正的时效性解决方案",
+      "description": "无妥协的快件运输。当每一分钟都至关重要时，我们的专属车队与 24/7 运作确保货物按业务所需的节奏快速流转。"
+    },
+    "price": {
+      "title": "价格",
+      "subtitle": "透明、合理、无隐藏费用",
+      "description": "公平透明的定价体系。没有隐藏成本，没有意外收费 —— 只有符合商业逻辑的专业物流服务。"
+    },
+    "support": {
+      "title": "支持",
+      "subtitle": "真实团队，实时响应，全天候服务",
+      "description": "由经验丰富的物流专家提供 24/7 客户支持。直接沟通、快速响应，在关键时刻提供解决方案。"
+    },
+    "whenMinutes": "当每一分钟都至关重要，",
+    "weMove": "我们立即行动",
+    "tagline": "无妥协的快运 • 速度 • 掌控 • 可靠"
+  },
+  "cta": {
+    "title": "准备发货了吗？",
+    "subtitle": "几分钟内获取报价",
+    "requestQuote": "获取报价",
+    "callUs": "立即致电"
+  },
+  "contact": {
+    "pageTitle": "联系我们",
+    "title": "让您的货物快速运转",
+    "subtitle": "覆盖欧洲的快件与高时效性货运解决方案，全天候 24/7 服务。",
+    "operating247": "全天候 24/7 运作",
+    "covering": "覆盖 5 个欧洲国家",
+    "servicesTitle": "我们的服务",
+    "servicesSubtitle": "根据您的需求量身定制的端到端物流解决方案",
+    "operateAcross": "业务遍布欧洲",
+    "quoteTitle": "获取报价或咨询问题",
+    "quoteSubtitle": "我们的物流专家随时为您服务，工作时间内 2 小时内回复。",
+    "ctaTitle": "速度 · 价格 · 支持",
+    "ctaSubtitle": "当时间至关重要，我们立即行动。提供具竞争力价格与全天候真实支持的紧急物流服务。",
+    "expressTransportDesc": "从厢式货车到整车运输，覆盖全欧洲",
+    "airFreightDesc": "采用滚装拖车操作的优先航空货运",
+    "seaFreightDesc": "适合大批量货物的高性价比海运",
+    "warehousingDesc": "安全仓储，支持实时库存监控",
+    "customsClearanceDesc": "专业清关与 Douane Loods 服务",
+    "b2bDesc": "面向企业与个人客户的定制化解决方案",
+    "feature1_1": "当日送达",
+    "feature1_2": "实时追踪",
+    "feature1_3": "专属司机",
+    "feature2_1": "快速机场操作",
+    "feature2_2": "航空公司合作",
+    "feature2_3": "高时效解决方案",
+    "feature3_1": "整箱与拼箱服务",
+    "feature3_2": "港到港运输",
+    "feature3_3": "具竞争力的价格",
+    "feature4_1": "温控环境",
+    "feature4_2": "24/7 访问",
+    "feature4_3": "灵活条款",
+    "feature5_1": "快速处理",
+    "feature5_2": "合规支持",
+    "feature5_3": "文件管理",
+    "feature6_1": "灵活调度",
+    "feature6_2": "末端配送",
+    "feature6_3": "退货管理",
+    "countriesTagline": "从短途快运到跨境紧急运输",
+    "expressNoCompromise": "无妥协的快运服务",
+    "transparentPricing": "透明定价",
+    "realPeople": "真实团队，真实回应"
+  },
+  "contactInfo": {
+    "title": "联系信息",
+    "subtitle": "我们随时为您的物流需求提供支持。针对紧急货运，我们的团队全天候 24/7 运作。",
+    "call247": "24/7 致电",
+    "email": "发送邮件",
+    "visitOffice": "访问办公室",
+    "availability": "服务时间",
+    "operations247": "全天候运营",
+    "emergencySupport": "提供紧急支持",
+    "urgentSupport": "需要紧急支持？",
+    "urgentText": "针对紧急或关键货运，请立即致电：",
+    "available247": "全天 24 小时，每周 7 天可用"
+  },
+  "contactForm": {
+    "title": "发送消息",
+    "fullName": "姓名",
+    "fullNamePlaceholder": "张三",
+    "email": "电子邮箱",
+    "emailPlaceholder": "zhang@example.com",
+    "phone": "联系电话",
+    "phonePlaceholder": "+31 62 858 5428",
+    "company": "公司名称",
+    "companyPlaceholder": "您的公司",
+    "serviceType": "服务类型",
+    "serviceTypePlaceholder": "请选择服务",
+    "message": "留言内容",
+    "messagePlaceholder": "请描述您的物流需求……",
+    "sendMessage": "发送消息",
+    "sending": "发送中...",
+    "successMessage": "感谢您的联系！我们将尽快回复您。",
+    "errorMinName": "姓名至少需要 2 个字符",
+    "errorInvalidEmail": "电子邮箱格式不正确",
+    "errorMinPhone": "请输入有效的电话号码",
+    "errorSelectService": "请选择服务类型",
+    "errorMinMessage": "留言内容至少需要 10 个字符",
+    "serviceAirFreight": "航空货运服务",
+    "serviceCustoms": "清关服务",
+    "serviceLogistics": "国际物流",
+    "serviceInsurance": "货物保险",
+    "serviceExpress": "快件配送",
+    "serviceSupplyChain": "供应链管理",
+    "serviceOther": "其他"
+  },
+  "footer": {
+    "company": "Spayka Air Cargo Solutions",
+    "description": "覆盖欧洲的快件与高时效性货运解决方案。",
+    "operating247": "全天候运营",
+    "quickLinks": "快速链接",
+    "services": "服务",
+    "getInTouch": "联系我们",
+    "copyright": "Spayka Air Cargo Solutions B.V.",
+    "developed": "开发方",
+    "dexlaris": "Dexlaris"
+  },
+  "countries": {
+    "netherlands": "荷兰",
+    "belgium": "比利时",
+    "luxembourg": "卢森堡",
+    "germany": "德国",
+    "france": "法国"
+  }
+}

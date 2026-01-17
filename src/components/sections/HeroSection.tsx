@@ -18,26 +18,28 @@ import {
   Truck,
   Globe2,
 } from "lucide-react";
-
-const keyFeatures = [
-  {
-    icon: Zap,
-    title: "Speed",
-    description: "Express delivery within 24-48 hours",
-  },
-  {
-    icon: DollarSign,
-    title: "Best Price",
-    description: "Competitive rates guaranteed",
-  },
-  {
-    icon: Headphones,
-    title: "24/7 Support",
-    description: "Always here when you need us",
-  },
-];
+import { useTranslations } from "next-intl";
 
 export function HeroSection() {
+  const t = useTranslations("hero");
+
+  const keyFeatures = [
+    {
+      icon: Zap,
+      title: t("features.speed.title"),
+      description: t("features.speed.description"),
+    },
+    {
+      icon: DollarSign,
+      title: t("features.price.title"),
+      description: t("features.price.description"),
+    },
+    {
+      icon: Headphones,
+      title: t("features.support.title"),
+      description: t("features.support.description"),
+    },
+  ];
   return (
     <>
       <section className="relative min-h-[500px] h-[70vh] sm:h-[650px] lg:h-[700px] flex items-center justify-center overflow-hidden">
@@ -60,16 +62,15 @@ export function HeroSection() {
         <div className="container mx-auto px-4 sm:px-6 z-10 text-center text-white py-8 sm:py-12">
           <Badge className="mb-3 sm:mb-4 bg-primary text-white border-0 text-xs sm:text-sm px-3 sm:px-4 py-1 sm:py-1.5 animate-fade-in-up">
             <Globe2 className="h-3 w-3 sm:h-4 sm:w-4 mr-1.5 sm:mr-2" />
-            Operating across 5 European countries
+            {t("badge")}
           </Badge>
 
           <h1 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl font-bold mb-3 sm:mb-4 lg:mb-6 animate-fade-in-up animation-delay-100 leading-tight px-2">
-            Spayka Air Cargo Solutions B.V.
+            {t("title")}
           </h1>
 
           <p className="text-sm sm:text-base md:text-lg lg:text-xl mb-6 sm:mb-8 max-w-3xl mx-auto animate-fade-in-up animation-delay-200 px-4 leading-relaxed">
-            Your trusted logistics partner delivering excellence in air freight,
-            sea freight, and express services across Europe
+            {t("subtitle")}
           </p>
 
           {/* Key Features */}
@@ -99,7 +100,7 @@ export function HeroSection() {
                 size="lg"
                 className="w-full sm:w-auto gap-2 bg-primary hover:bg-primary/90 hover:scale-105 text-sm sm:text-base lg:text-lg px-6 sm:px-8 min-h-[52px] sm:min-h-[56px] shadow-2xl hover:shadow-primary/50 transition-all font-semibold"
               >
-                Get a Quote
+                {t("getQuote")}
                 <ArrowRight className="h-4 w-4 sm:h-5 sm:w-5 group-hover:translate-x-1 transition-transform" />
               </Button>
             </Link>
@@ -108,7 +109,7 @@ export function HeroSection() {
               className="w-full sm:w-auto gap-2 text-sm sm:text-base lg:text-lg px-6 sm:px-8 bg-white/10 backdrop-blur-md hover:bg-white/20 text-white border-2 border-white/80 hover:border-white hover:scale-105 min-h-[52px] sm:min-h-[56px] shadow-lg transition-all"
               asChild
             >
-              <a href="#services">Our Services</a>
+              <a href="tel:+31628585428">{t("callNow")}</a>
             </Button>
           </div>
         </div>

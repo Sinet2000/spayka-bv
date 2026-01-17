@@ -2,60 +2,80 @@
 
 import { Card, CardContent } from "@/components/ui/card";
 import { Mail, MapPin, Phone, Clock } from "lucide-react";
-
-const contactInfo = [
-  {
-    icon: MapPin,
-    title: "Visit Us",
-    details: [
-      "Tilly de Vriestuin 7",
-      "1705 HL",
-      "Heerhugowaard",
-      "Netherlands",
-    ],
-  },
-  {
-    icon: Phone,
-    title: "Call Us",
-    details: ["+31 62 858 5428", "Mon-Fri: 09:00 - 18:00"],
-  },
-  {
-    icon: Mail,
-    title: "Email Us",
-    details: ["contact@spayka.nl", "quotes@spayka.nl"],
-  },
-  {
-    icon: Clock,
-    title: "Business Hours",
-    details: ["Monday - Friday: 09:00 - 18:00"],
-  },
-];
+import { useTranslations } from "next-intl";
 
 export function ContactInfo() {
+  const t = useTranslations("contactInfo");
+  const tTopBar = useTranslations("topBar");
+
+  const contactInfo = [
+    {
+      icon: Phone,
+      title: t("call247"),
+      details: [tTopBar("phone")],
+      highlight: true,
+    },
+    {
+      icon: Mail,
+      title: t("email"),
+      details: [tTopBar("email")],
+    },
+    {
+      icon: MapPin,
+      title: t("visitOffice"),
+      details: ["Tilly de Vriestuin 7", "1705 HL Heerhugowaard", "Netherlands"],
+    },
+    {
+      icon: Clock,
+      title: t("availability"),
+      details: [t("operations247"), t("emergencySupport")],
+    },
+  ];
   return (
     <div className="space-y-6">
       <div>
-        <h2 className="text-3xl font-bold mb-4">Get in Touch</h2>
-        <p className="text-muted-foreground text-lg">
-          Have questions about our services? Our team is here to help. Reach out
-          to us through any of the following channels.
+        <h2 className="text-2xl sm:text-3xl font-bold mb-4">{t("title")}</h2>
+        <p className="text-muted-foreground text-base sm:text-lg leading-relaxed">
+          {t("subtitle")}
         </p>
       </div>
 
-      <div className="grid grid-cols-1 gap-6">
+      <div className="grid grid-cols-1 gap-4">
         {contactInfo.map((info, index) => {
           const Icon = info.icon;
           return (
-            <Card key={index}>
-              <CardContent className="p-6">
+            <Card
+              key={index}
+              className={
+                info.highlight ? "border-2 border-red-400/30 bg-red-400/5" : ""
+              }
+            >
+              <CardContent className="p-5 sm:p-6">
                 <div className="flex gap-4">
-                  <div className="w-12 h-12 bg-primary/10 rounded-lg flex items-center justify-center flex-shrink-0">
-                    <Icon className="h-6 w-6 text-primary" />
+                  <div
+                    className={`w-12 h-12 rounded-lg flex items-center justify-center flex-shrink-0 ${
+                      info.highlight ? "bg-red-400/20" : "bg-slate-100"
+                    }`}
+                  >
+                    <Icon
+                      className={`h-6 w-6 ${
+                        info.highlight ? "text-red-400" : "text-slate-700"
+                      }`}
+                    />
                   </div>
                   <div>
-                    <h3 className="font-semibold text-lg mb-2">{info.title}</h3>
+                    <h3 className="font-semibold text-base sm:text-lg mb-2">
+                      {info.title}
+                    </h3>
                     {info.details.map((detail, idx) => (
-                      <p key={idx} className="text-muted-foreground">
+                      <p
+                        key={idx}
+                        className={`text-sm sm:text-base ${
+                          info.highlight
+                            ? "text-foreground font-medium"
+                            : "text-muted-foreground"
+                        }`}
+                      >
                         {detail}
                       </p>
                     ))}
@@ -67,13 +87,27 @@ export function ContactInfo() {
         })}
       </div>
 
-      <Card className="bg-primary text-primary-foreground">
-        <CardContent className="p-6">
-          <h3 className="font-semibold text-lg mb-2">Emergency Services</h3>
-          <p className="mb-2">
-            For urgent shipments and 24/7 emergency support:
-          </p>
-          <p className="text-xl font-bold">+31 62 858 5428</p>
+      <Card className="bg-slate-900 text-white border-slate-800">
+        <CardContent className="p-5 sm:p-6">
+          <div className="flex items-start gap-3">
+            <div className="w-10 h-10 bg-red-400/20 rounded-lg flex items-center justify-center flex-shrink-0">
+              <Clock className="h-5 w-5 text-red-400" />
+            </div>
+            <div>
+              <h3 className="font-semibold text-base sm:text-lg mb-2">
+                {t("urgentSupport")}
+              </h3>
+              <p className="text-sm sm:text-base text-slate-300 mb-3">
+                {t("urgentText")}
+              </p>
+              <p className="text-xl sm:text-2xl font-bold text-red-400">
+                {tTopBar("phone")}
+              </p>
+              <p className="text-xs sm:text-sm text-slate-400 mt-2">
+                {t("available247")}
+              </p>
+            </div>
+          </div>
         </CardContent>
       </Card>
     </div>

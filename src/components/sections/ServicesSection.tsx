@@ -14,43 +14,52 @@ import {
   Truck,
   Warehouse,
 } from "lucide-react";
-
-const services = [
-  {
-    icon: Truck,
-    name: "Express Van Services",
-    description: "Fast delivery across Europe with our fleet of modern vans",
-  },
-  {
-    icon: Plane,
-    name: "Air Freight",
-    description: "Priority air cargo services for time-sensitive shipments",
-  },
-  {
-    icon: Ship,
-    name: "Sea Freight",
-    description: "Cost-effective ocean freight for large volume shipments",
-  },
-  {
-    icon: Warehouse,
-    name: "Warehousing",
-    description: "Secure storage solutions with real-time inventory tracking",
-  },
-  {
-    icon: FileCheck,
-    name: "Customs Clearance",
-    description: "Expert customs brokerage for smooth international trade",
-  },
-  {
-    icon: Package,
-    name: "B2B & B2C Solutions",
-    description: "Tailored logistics for businesses and consumers",
-  },
-];
-
-const countries = ["Netherlands", "Belgium", "Luxembourg", "Germany", "France"];
+import { useTranslations } from "next-intl";
 
 export function ServicesSection() {
+  const t = useTranslations("services");
+  const tCountries = useTranslations("countries");
+
+  const services = [
+    {
+      icon: Truck,
+      name: t("expressTransport"),
+      description: t("expressTransportDesc"),
+    },
+    {
+      icon: Plane,
+      name: t("airFreight"),
+      description: t("airFreightDesc"),
+    },
+    {
+      icon: Ship,
+      name: t("seaFreight"),
+      description: t("seaFreightDesc"),
+    },
+    {
+      icon: Warehouse,
+      name: t("warehousing"),
+      description: t("warehousingDesc"),
+    },
+    {
+      icon: FileCheck,
+      name: t("customsClearance"),
+      description: t("customsClearanceDesc"),
+    },
+    {
+      icon: Package,
+      name: t("b2b"),
+      description: t("b2bDesc"),
+    },
+  ];
+
+  const countries = [
+    tCountries("netherlands"),
+    tCountries("belgium"),
+    tCountries("luxembourg"),
+    tCountries("germany"),
+    tCountries("france"),
+  ];
   return (
     <section id="services">
       {/* Services Section */}
@@ -71,16 +80,16 @@ export function ServicesSection() {
               <div className="flex items-center gap-2 text-primary mb-2">
                 <div className="h-px w-8 bg-primary" />
                 <span className="text-sm font-semibold uppercase tracking-wider">
-                  What We Offer
+                  {t("badge")}
                 </span>
                 <div className="h-px w-8 bg-primary" />
               </div>
             </div>
             <h2 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold mb-4 sm:mb-6 text-foreground">
-              Our Services
+              {t("title")}
             </h2>
             <p className="text-base sm:text-lg lg:text-xl text-muted-foreground max-w-3xl mx-auto leading-relaxed">
-              Comprehensive logistics solutions across{" "}
+              {t("subtitle")}{" "}
               <span className="font-bold text-primary">
                 {countries.join(", ")}
               </span>

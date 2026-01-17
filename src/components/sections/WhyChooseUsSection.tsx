@@ -2,35 +2,34 @@
 
 import { Card, CardContent } from "@/components/ui/card";
 import { Zap, DollarSign, Headphones } from "lucide-react";
-
-const coreValues = [
-  {
-    icon: Zap,
-    title: "Speed",
-    subtitle: "Time-critical means time-critical",
-    description:
-      "Express delivery without compromise. When every minute counts, our dedicated fleet and 24/7 operations ensure your cargo moves at the pace your business demands.",
-    color: "from-primary to-orange-600",
-  },
-  {
-    icon: DollarSign,
-    title: "Price",
-    subtitle: "Competitive, transparent, no surprises",
-    description:
-      "Fair pricing with complete transparency. No hidden fees, no unexpected costs — just honest logistics at rates that make business sense.",
-    color: "from-secondary to-blue-700",
-  },
-  {
-    icon: Headphones,
-    title: "Support",
-    subtitle: "Real people, real answers, 24/7",
-    description:
-      "Nonstop customer support from experienced logistics professionals. Direct communication, immediate responses, and solutions when you need them most.",
-    color: "from-primary via-secondary to-primary",
-  },
-];
+import { useTranslations } from "next-intl";
 
 export function WhyChooseUsSection() {
+  const t = useTranslations("whyUs");
+
+  const coreValues = [
+    {
+      icon: Zap,
+      title: t("speed.title"),
+      subtitle: t("speed.subtitle"),
+      description: t("speed.description"),
+      color: "from-primary to-orange-600",
+    },
+    {
+      icon: DollarSign,
+      title: t("price.title"),
+      subtitle: t("price.subtitle"),
+      description: t("price.description"),
+      color: "from-secondary to-blue-700",
+    },
+    {
+      icon: Headphones,
+      title: t("support.title"),
+      subtitle: t("support.subtitle"),
+      description: t("support.description"),
+      color: "from-primary via-secondary to-primary",
+    },
+  ];
   return (
     <section
       id="why-us"
@@ -47,16 +46,15 @@ export function WhyChooseUsSection() {
         <div className="text-center mb-12 sm:mb-16 max-w-3xl mx-auto">
           <div className="inline-block mb-4">
             <div className="text-xs sm:text-sm font-semibold uppercase tracking-wider text-primary mb-2">
-              Why Choose Us
+              {t("badge")}
             </div>
           </div>
           <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold mb-4 sm:mb-6 text-white">
-            We Don't Compete on Promises
+            {t("title")}
           </h2>
           <div className="w-20 h-px bg-slate-600 mx-auto mb-6" />
           <p className="text-base sm:text-lg lg:text-xl text-slate-200 leading-relaxed font-medium">
-            We compete on{" "}
-            <span className="text-primary font-bold">execution</span>
+            {t("subtitle")}
           </p>
         </div>
 
@@ -99,12 +97,12 @@ export function WhyChooseUsSection() {
           <Card className="border-2 border-primary/30 bg-slate-800/50 backdrop-blur-sm shadow-xl">
             <CardContent className="p-6 sm:p-8 text-center">
               <p className="text-xl sm:text-2xl lg:text-3xl font-bold text-white leading-relaxed">
-                When minutes matter,{" "}
-                <span className="text-primary">we move</span>
+                {t("whenMinutes")}{" "}
+                <span className="text-primary">{t("weMove")}</span>
               </p>
               <div className="mt-4 pt-4 border-t border-slate-700">
                 <p className="text-sm sm:text-base text-slate-400 italic">
-                  Express without compromise • Speed. Control. Reliability.
+                  {t("tagline")}
                 </p>
               </div>
             </CardContent>

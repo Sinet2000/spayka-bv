@@ -1,0 +1,202 @@
+{
+  "nav": {
+    "home": "Home",
+    "services": "Diensten",
+    "about": "Over Ons",
+    "whyUs": "Waarom Spayka",
+    "contact": "Contact",
+    "callUs": "Bel Ons",
+    "contactUs": "Contact"
+  },
+  "topBar": {
+    "phone": "+31 62 858 5428",
+    "email": "contact@spayka.nl",
+    "location": "Heerhugowaard, NL"
+  },
+  "hero": {
+    "badge": "Express Vrachtoplossingen 24/7",
+    "title": "Snelle, Betrouwbare Vrachtoplossingen in Europa",
+    "subtitle": "Express en tijdkritieke logistiek 24/7 operationeel",
+    "getQuote": "Offerte Aanvragen",
+    "callNow": "Bel Ons Nu",
+    "features": {
+      "speed": {
+        "title": "Snelheid",
+        "description": "Express levering binnen 24-48 uur"
+      },
+      "price": {
+        "title": "Beste Prijs",
+        "description": "Competitieve tarieven gegarandeerd"
+      },
+      "support": {
+        "title": "24/7 Ondersteuning",
+        "description": "Altijd beschikbaar wanneer u ons nodig heeft"
+      }
+    }
+  },
+  "about": {
+    "badge": "Over Ons",
+    "title": "Spayka Air Cargo Solutions B.V.",
+    "tagline": "Express zonder compromis. Europese logistiek goed gedaan.",
+    "whoWeAre": "Wie Zijn Wij",
+    "whoWeAreText": "Nederlands logistiek bedrijf gespecialiseerd in express en tijdkritieke vrachtoplossingen in Europa. 24/7 operationeel met snelheid zonder chaos.",
+    "whatWeDo": "Wat Doen Wij",
+    "whatWeDoText": "End-to-end logistiek van busjes tot volledige luchtvracht oplossingen",
+    "whereWeOperate": "Waar Wij Opereren",
+    "specializedEquipment": "Gespecialiseerde Apparatuur",
+    "equipmentText": "Rollerbed trailers geoptimaliseerd voor PMC luchtvracht units — snelle afhandeling, kortere laadtijden, maximale veiligheid",
+    "mission": "Onze Missie",
+    "missionText": "Het leveren van betrouwbare, snelle vrachtoplossingen in Europa door slimme logistiek, toegewijde apparatuur en non-stop ondersteuning te combineren — zonder onnodige complexiteit.",
+    "whenMinutes": "Als minuten tellen",
+    "weMove": "bewegen wij"
+  },
+  "services": {
+    "badge": "Wat Wij Bieden",
+    "title": "Onze Diensten",
+    "subtitle": "Uitgebreide logistieke oplossingen in",
+    "expressTransport": "24/7 Express Transport",
+    "expressTransportDesc": "Snelle levering door heel Europa met onze moderne vloot busjes",
+    "airFreight": "Luchtvracht (PMC)",
+    "airFreightDesc": "Prioriteit luchtvracht diensten voor tijdgevoelige zendingen",
+    "seaFreight": "Zeevracht",
+    "seaFreightDesc": "Kosteneffectieve zeevracht voor grote volume zendingen",
+    "warehousing": "Opslag",
+    "warehousingDesc": "Veilige opslagoplossingen met real-time voorraad tracking",
+    "customsClearance": "Douane-afhandeling",
+    "customsClearanceDesc": "Expert douane makelaardij voor soepele internationale handel",
+    "b2b": "B2B & B2C",
+    "b2bDesc": "Logistiek op maat voor bedrijven en consumenten"
+  },
+  "whyUs": {
+    "badge": "Waarom Spayka",
+    "title": "Wij Concurreren Niet Op Beloftes",
+    "subtitle": "Wij concurreren op uitvoering",
+    "speed": {
+      "title": "Snelheid",
+      "subtitle": "Tijdkritiek betekent tijdkritiek",
+      "description": "Express levering zonder compromis. Wanneer elke minuut telt, zorgen onze toegewijde vloot en 24/7 operaties ervoor dat uw vracht beweegt in het tempo dat uw bedrijf vraagt."
+    },
+    "price": {
+      "title": "Prijs",
+      "subtitle": "Competitief, transparant, geen verrassingen",
+      "description": "Eerlijke prijzen met volledige transparantie. Geen verborgen kosten, geen onverwachte kosten — gewoon eerlijke logistiek tegen tarieven die zakelijk zinvol zijn."
+    },
+    "support": {
+      "title": "Ondersteuning",
+      "subtitle": "Echte mensen, echte antwoorden, 24/7",
+      "description": "Non-stop klantenondersteuning van ervaren logistieke professionals. Directe communicatie, directe reacties en oplossingen wanneer u ze het meest nodig heeft."
+    },
+    "whenMinutes": "Als minuten tellen,",
+    "weMove": "bewegen wij",
+    "tagline": "Express zonder compromis • Snelheid. Controle. Betrouwbaarheid."
+  },
+  "cta": {
+    "title": "Klaar Om Te Verzenden?",
+    "subtitle": "Ontvang een offerte binnen enkele minuten",
+    "requestQuote": "Offerte Aanvragen",
+    "callUs": "Bel Ons Nu"
+  },
+  "contact": {
+    "pageTitle": "Contact",
+    "title": "Laten We Uw Vracht Verplaatsen",
+    "subtitle": "Express en tijdkritieke vrachtoplossingen in Europa. Beschikbaar 24/7.",
+    "operating247": "24/7 Operationeel",
+    "covering": "Dekking van 5 Europese Landen",
+    "servicesTitle": "Onze Diensten",
+    "servicesSubtitle": "End-to-end logistieke oplossingen op maat gemaakt voor uw behoeften",
+    "operateAcross": "Wij Opereren in Heel Europa",
+    "quoteTitle": "Vraag een Offerte Aan of Stel een Vraag",
+    "quoteSubtitle": "Onze logistieke experts staan klaar om te helpen. Krijg binnen 2 uur antwoord tijdens kantooruren.",
+    "ctaTitle": "Snelheid. Prijs. Ondersteuning.",
+    "ctaSubtitle": "Als minuten tellen, bewegen wij. Tijdkritieke vrachtoplossingen met competitieve prijzen en echte antwoorden 24/7.",
+    "expressTransportDesc": "Van busjes tot volledige vrachtwagens door heel Europa",
+    "airFreightDesc": "Prioriteit luchtvracht met rollerbed trailer operaties",
+    "seaFreightDesc": "Kosteneffectieve zeevracht voor grote volumes",
+    "warehousingDesc": "Veilige opslag met real-time voorraad tracking",
+    "customsClearanceDesc": "Expert douane makelaardij en Douane Loods diensten",
+    "b2bDesc": "Op maat gemaakte oplossingen voor zakelijke en consumentenleveringen",
+    "feature1_1": "Levering dezelfde dag",
+    "feature1_2": "Real-time tracking",
+    "feature1_3": "Toegewijde chauffeurs",
+    "feature2_1": "Snelle luchthaven afhandeling",
+    "feature2_2": "Luchtvaartmaatschappij partnerschappen",
+    "feature2_3": "Tijdkritieke oplossingen",
+    "feature3_1": "FCL & LCL opties",
+    "feature3_2": "Haven-tot-haven dienst",
+    "feature3_3": "Competitieve tarieven",
+    "feature4_1": "Klimaat gecontroleerd",
+    "feature4_2": "24/7 toegang",
+    "feature4_3": "Flexibele voorwaarden",
+    "feature5_1": "Snelle verwerking",
+    "feature5_2": "Compliance ondersteuning",
+    "feature5_3": "Documentatie afhandeling",
+    "feature6_1": "Flexibele planning",
+    "feature6_2": "Last-mile levering",
+    "feature6_3": "Retour management",
+    "countriesTagline": "Van korte afstand express tot grensoverschrijdende kritieke zendingen",
+    "expressNoCompromise": "Express zonder compromis",
+    "transparentPricing": "Transparante prijzen",
+    "realPeople": "Echte mensen, echte antwoorden"
+  },
+  "contactInfo": {
+    "title": "Contactinformatie",
+    "subtitle": "Wij zijn er om te helpen met uw logistieke behoeften. Neem altijd contact op — ons team werkt 24/7 voor tijdkritieke zendingen.",
+    "call247": "Bel Ons 24/7",
+    "email": "E-mail Ons",
+    "visitOffice": "Bezoek Ons Kantoor",
+    "availability": "Beschikbaarheid",
+    "operations247": "24/7 Operaties",
+    "emergencySupport": "Noodhulp beschikbaar",
+    "urgentSupport": "Dringende Hulp Nodig?",
+    "urgentText": "Voor tijdkritieke en nood zendingen, bel ons direct:",
+    "available247": "Beschikbaar 24 uur per dag, 7 dagen per week"
+  },
+  "contactForm": {
+    "title": "Stuur Ons een Bericht",
+    "fullName": "Volledige Naam",
+    "fullNamePlaceholder": "Jan Jansen",
+    "email": "E-mailadres",
+    "emailPlaceholder": "jan@voorbeeld.nl",
+    "phone": "Telefoonnummer",
+    "phonePlaceholder": "+31 62 858 5428",
+    "company": "Bedrijfsnaam",
+    "companyPlaceholder": "Uw Bedrijf",
+    "serviceType": "Service Type",
+    "serviceTypePlaceholder": "Selecteer een dienst",
+    "message": "Bericht",
+    "messagePlaceholder": "Vertel ons over uw logistieke behoeften...",
+    "sendMessage": "Bericht Verzenden",
+    "sending": "Verzenden...",
+    "successMessage": "Bedankt voor uw bericht! We nemen zo snel mogelijk contact met u op.",
+    "errorMinName": "Naam moet minimaal 2 karakters bevatten",
+    "errorInvalidEmail": "Ongeldig e-mailadres",
+    "errorMinPhone": "Voer een geldig telefoonnummer in",
+    "errorSelectService": "Selecteer een service type",
+    "errorMinMessage": "Bericht moet minimaal 10 karakters bevatten",
+    "serviceAirFreight": "Luchtvracht Diensten",
+    "serviceCustoms": "Douane-afhandeling",
+    "serviceLogistics": "Internationale Logistiek",
+    "serviceInsurance": "Vrachtverzekering",
+    "serviceExpress": "Express Levering",
+    "serviceSupplyChain": "Supply Chain Management",
+    "serviceOther": "Anders"
+  },
+  "footer": {
+    "company": "Spayka Air Cargo Solutions",
+    "description": "Express en tijdkritieke vrachtoplossingen in Europa.",
+    "operating247": "24/7 Operationeel",
+    "quickLinks": "Snelle Links",
+    "services": "Diensten",
+    "getInTouch": "Neem Contact Op",
+    "copyright": "Spayka Air Cargo Solutions B.V.",
+    "developed": "Ontwikkeld door",
+    "dexlaris": "Dexlaris"
+  },
+  "countries": {
+    "netherlands": "Nederland",
+    "belgium": "België",
+    "luxembourg": "Luxemburg",
+    "germany": "Duitsland",
+    "france": "Frankrijk"
+  }
+}

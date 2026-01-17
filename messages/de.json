@@ -1,0 +1,202 @@
+{
+  "nav": {
+    "home": "Startseite",
+    "services": "Leistungen",
+    "about": "Über uns",
+    "whyUs": "Warum wir",
+    "contact": "Kontakt",
+    "callUs": "Jetzt anrufen",
+    "contactUs": "Kontakt aufnehmen"
+  },
+  "topBar": {
+    "phone": "+31 62 858 5428",
+    "email": "contact@spayka.nl",
+    "location": "Heerhugowaard, NL"
+  },
+  "hero": {
+    "badge": "Express-Frachtlösungen 24/7",
+    "title": "Schnelle, zuverlässige Frachtlösungen in ganz Europa",
+    "subtitle": "Express- und zeitkritische Logistik rund um die Uhr",
+    "getQuote": "Angebot anfordern",
+    "callNow": "Jetzt anrufen",
+    "features": {
+      "speed": {
+        "title": "Geschwindigkeit",
+        "description": "Expresslieferung innerhalb von 24–48 Stunden"
+      },
+      "price": {
+        "title": "Bester Preis",
+        "description": "Garantiert wettbewerbsfähige Preise"
+      },
+      "support": {
+        "title": "24/7 Support",
+        "description": "Immer für Sie da, wenn Sie uns brauchen"
+      }
+    }
+  },
+  "about": {
+    "badge": "Über uns",
+    "title": "Spayka Air Cargo Solutions B.V.",
+    "tagline": "Express ohne Kompromisse. Europäische Logistik, richtig gemacht.",
+    "whoWeAre": "Wer wir sind",
+    "whoWeAreText": "Ein in den Niederlanden ansässiges Logistikunternehmen, spezialisiert auf Express- und zeitkritische Frachtlösungen in ganz Europa. 24/7 im Einsatz – schnell, strukturiert und zuverlässig.",
+    "whatWeDo": "Was wir tun",
+    "whatWeDoText": "Ganzheitliche Logistiklösungen – vom Transporter bis zur vollständigen Luftfracht",
+    "whereWeOperate": "Wo wir tätig sind",
+    "specializedEquipment": "Spezialisiertes Equipment",
+    "equipmentText": "Rollerbed-Trailer optimiert für PMC-Luftfracht­einheiten – schnelle Abfertigung, reduzierte Ladezeiten, maximale Sicherheit",
+    "mission": "Unsere Mission",
+    "missionText": "Zuverlässige Hochgeschwindigkeits-Frachtlösungen in ganz Europa durch intelligente Logistik, spezialisiertes Equipment und kontinuierlichen Support – ohne unnötige Komplexität.",
+    "whenMinutes": "Wenn jede Minute zählt",
+    "weMove": "bewegen wir"
+  },
+  "services": {
+    "badge": "Unser Angebot",
+    "title": "Unsere Leistungen",
+    "subtitle": "Umfassende Logistiklösungen in ganz",
+    "expressTransport": "24/7 Express-Transport",
+    "expressTransportDesc": "Schnelle europaweite Lieferung mit unserer modernen Fahrzeugflotte",
+    "airFreight": "Luftfracht (PMC)",
+    "airFreightDesc": "Priorisierte Luftfrachtlösungen für zeitkritische Sendungen",
+    "seaFreight": "Seefracht",
+    "seaFreightDesc": "Kosteneffiziente Seefracht für große Volumen",
+    "warehousing": "Lagerhaltung",
+    "warehousingDesc": "Sichere Lagerlösungen mit Echtzeit-Bestandsverfolgung",
+    "customsClearance": "Zollabfertigung",
+    "customsClearanceDesc": "Professionelle Zollabwicklung für reibungslosen internationalen Handel",
+    "b2b": "B2B & B2C",
+    "b2bDesc": "Maßgeschneiderte Logistiklösungen für Unternehmen und Endkunden"
+  },
+  "whyUs": {
+    "badge": "Warum wir",
+    "title": "Wir konkurrieren nicht mit Versprechen",
+    "subtitle": "Wir überzeugen durch Umsetzung",
+    "speed": {
+      "title": "Geschwindigkeit",
+      "subtitle": "Zeitkritisch heißt wirklich zeitkritisch",
+      "description": "Expresslieferung ohne Kompromisse. Wenn jede Minute zählt, sorgen unsere dedizierte Flotte und der 24/7-Betrieb dafür, dass Ihre Fracht im richtigen Tempo unterwegs ist."
+    },
+    "price": {
+      "title": "Preis",
+      "subtitle": "Wettbewerbsfähig, transparent, ohne Überraschungen",
+      "description": "Faire Preise mit vollständiger Transparenz. Keine versteckten Kosten – nur ehrliche Logistik zu wirtschaftlich sinnvollen Konditionen."
+    },
+    "support": {
+      "title": "Support",
+      "subtitle": "Echte Menschen, echte Antworten, 24/7",
+      "description": "Rund-um-die-Uhr-Support durch erfahrene Logistikexperten. Direkte Kommunikation, schnelle Reaktionen und Lösungen genau dann, wenn sie gebraucht werden."
+    },
+    "whenMinutes": "Wenn jede Minute zählt,",
+    "weMove": "bewegen wir",
+    "tagline": "Express ohne Kompromisse • Geschwindigkeit. Kontrolle. Zuverlässigkeit."
+  },
+  "cta": {
+    "title": "Versandbereit?",
+    "subtitle": "Angebot in wenigen Minuten erhalten",
+    "requestQuote": "Angebot anfordern",
+    "callUs": "Jetzt anrufen"
+  },
+  "contact": {
+    "pageTitle": "Kontakt",
+    "title": "Wir bringen Ihre Fracht in Bewegung",
+    "subtitle": "Express- und zeitkritische Frachtlösungen in ganz Europa. 24/7 verfügbar.",
+    "operating247": "24/7 im Einsatz",
+    "covering": "Abdeckung von 5 europäischen Ländern",
+    "servicesTitle": "Unsere Leistungen",
+    "servicesSubtitle": "Ganzheitliche Logistiklösungen, abgestimmt auf Ihre Anforderungen",
+    "operateAcross": "Europaweit im Einsatz",
+    "quoteTitle": "Angebot anfordern oder Frage stellen",
+    "quoteSubtitle": "Unsere Logistikexperten helfen Ihnen gerne weiter. Antwort innerhalb von 2 Stunden während der Geschäftszeiten.",
+    "ctaTitle": "Geschwindigkeit. Preis. Support.",
+    "ctaSubtitle": "Wenn jede Minute zählt, bewegen wir. Zeitkritische Frachtlösungen mit fairen Preisen und echtem Support – rund um die Uhr.",
+    "expressTransportDesc": "Vom Transporter bis zur Komplettladung in ganz Europa",
+    "airFreightDesc": "Priorisierte Luftfracht mit Rollerbed-Trailer-Abfertigung",
+    "seaFreightDesc": "Kosteneffiziente Seefracht für große Volumen",
+    "warehousingDesc": "Sichere Lagerung mit Echtzeit-Bestandskontrolle",
+    "customsClearanceDesc": "Professionelle Zollabwicklung und Douane-Loods-Services",
+    "b2bDesc": "Individuelle Lösungen für Geschäfts- und Endkunden",
+    "feature1_1": "Same-Day-Lieferung",
+    "feature1_2": "Echtzeit-Tracking",
+    "feature1_3": "Dedizierte Fahrer",
+    "feature2_1": "Schnelle Flughafenabfertigung",
+    "feature2_2": "Airline-Partnerschaften",
+    "feature2_3": "Zeitkritische Lösungen",
+    "feature3_1": "FCL- & LCL-Optionen",
+    "feature3_2": "Hafen-zu-Hafen-Service",
+    "feature3_3": "Wettbewerbsfähige Preise",
+    "feature4_1": "Klimakontrolliert",
+    "feature4_2": "24/7-Zugang",
+    "feature4_3": "Flexible Konditionen",
+    "feature5_1": "Schnelle Abwicklung",
+    "feature5_2": "Compliance-Unterstützung",
+    "feature5_3": "Dokumentenmanagement",
+    "feature6_1": "Flexible Zeitplanung",
+    "feature6_2": "Last-Mile-Delivery",
+    "feature6_3": "Retourenmanagement",
+    "countriesTagline": "Von Kurzstrecken-Express bis zu grenzüberschreitenden kritischen Sendungen",
+    "expressNoCompromise": "Express ohne Kompromisse",
+    "transparentPricing": "Transparente Preise",
+    "realPeople": "Echte Menschen, echte Antworten"
+  },
+  "contactInfo": {
+    "title": "Kontaktinformationen",
+    "subtitle": "Wir unterstützen Sie bei all Ihren Logistikanforderungen. Kontaktieren Sie uns jederzeit – unser Team ist 24/7 für zeitkritische Sendungen im Einsatz.",
+    "call247": "24/7 anrufen",
+    "email": "E-Mail senden",
+    "visitOffice": "Unser Büro besuchen",
+    "availability": "Verfügbarkeit",
+    "operations247": "24/7 Betrieb",
+    "emergencySupport": "Notfall-Support verfügbar",
+    "urgentSupport": "Dringende Unterstützung benötigt?",
+    "urgentText": "Bei zeitkritischen oder Notfall-Sendungen rufen Sie uns bitte sofort an:",
+    "available247": "24 Stunden am Tag, 7 Tage die Woche verfügbar"
+  },
+  "contactForm": {
+    "title": "Nachricht senden",
+    "fullName": "Vollständiger Name",
+    "fullNamePlaceholder": "Max Mustermann",
+    "email": "E-Mail-Adresse",
+    "emailPlaceholder": "max@example.com",
+    "phone": "Telefonnummer",
+    "phonePlaceholder": "+31 62 858 5428",
+    "company": "Firmenname",
+    "companyPlaceholder": "Ihr Unternehmen",
+    "serviceType": "Leistungsart",
+    "serviceTypePlaceholder": "Leistung auswählen",
+    "message": "Nachricht",
+    "messagePlaceholder": "Beschreiben Sie Ihre logistischen Anforderungen...",
+    "sendMessage": "Nachricht senden",
+    "sending": "Wird gesendet...",
+    "successMessage": "Vielen Dank für Ihre Anfrage! Wir melden uns in Kürze bei Ihnen.",
+    "errorMinName": "Der Name muss mindestens 2 Zeichen enthalten",
+    "errorInvalidEmail": "Ungültige E-Mail-Adresse",
+    "errorMinPhone": "Bitte geben Sie eine gültige Telefonnummer ein",
+    "errorSelectService": "Bitte wählen Sie eine Leistungsart aus",
+    "errorMinMessage": "Die Nachricht muss mindestens 10 Zeichen enthalten",
+    "serviceAirFreight": "Luftfracht-Services",
+    "serviceCustoms": "Zollabfertigung",
+    "serviceLogistics": "Internationale Logistik",
+    "serviceInsurance": "Frachtversicherung",
+    "serviceExpress": "Expresslieferung",
+    "serviceSupplyChain": "Supply-Chain-Management",
+    "serviceOther": "Sonstiges"
+  },
+  "footer": {
+    "company": "Spayka Air Cargo Solutions",
+    "description": "Express- und zeitkritische Frachtlösungen in ganz Europa.",
+    "operating247": "24/7 im Einsatz",
+    "quickLinks": "Schnellzugriff",
+    "services": "Leistungen",
+    "getInTouch": "Kontakt aufnehmen",
+    "copyright": "Spayka Air Cargo Solutions B.V.",
+    "developed": "Entwickelt von",
+    "dexlaris": "Dexlaris"
+  },
+  "countries": {
+    "netherlands": "Niederlande",
+    "belgium": "Belgien",
+    "luxembourg": "Luxemburg",
+    "germany": "Deutschland",
+    "france": "Frankreich"
+  }
+}

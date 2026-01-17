@@ -3,20 +3,33 @@
 import { Card, CardContent } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import { MapPin } from "lucide-react";
-
-const operatingCountries = [
-  { name: "Netherlands", flag: "🇳🇱" },
-  { name: "Belgium", flag: "🇧🇪" },
-  { name: "Luxembourg", flag: "🇱🇺" },
-  { name: "Germany", flag: "🇩🇪" },
-  { name: "France", flag: "🇫🇷" },
-];
+import { useTranslations } from "next-intl";
 
 export function AboutSection() {
+  const t = useTranslations("about");
+  const tCountries = useTranslations("countries");
+  const tServices = useTranslations("services");
+
+  const operatingCountries = [
+    { name: tCountries("netherlands"), flag: "🇳🇱" },
+    { name: tCountries("belgium"), flag: "🇧🇪" },
+    { name: tCountries("luxembourg"), flag: "🇱🇺" },
+    { name: tCountries("germany"), flag: "🇩🇪" },
+    { name: tCountries("france"), flag: "🇫🇷" },
+  ];
+
+  const services = [
+    tServices("expressTransport"),
+    tServices("airFreight"),
+    tServices("seaFreight"),
+    tServices("warehousing"),
+    tServices("customsClearance"),
+    tServices("b2b"),
+  ];
   return (
     <section
       id="about"
-      className="relative py-16 sm:py-20 lg:py-24 bg-gradient-to-b from-white via-gray-50/50 to-white overflow-hidden"
+      className="relative py-8 sm:py-12 lg:py-16 bg-gradient-to-b from-white via-gray-50/50 to-white overflow-hidden"
     >
       {/* Subtle Background Decoration */}
       <div className="absolute top-0 right-0 w-1/3 h-full opacity-[0.03] pointer-events-none">
@@ -27,14 +40,14 @@ export function AboutSection() {
         {/* Section Header */}
         <div className="text-center mb-12 sm:mb-16">
           <Badge className="mb-4 text-xs sm:text-sm px-4 py-1.5 bg-primary/10 text-primary border-primary/20 hover:bg-primary/20">
-            About Us
+            {t("badge")}
           </Badge>
           <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold mb-4 sm:mb-6 text-foreground">
-            Spayka Air Cargo Solutions B.V.
+            {t("title")}
           </h2>
           <div className="w-20 h-px bg-gray-300 mx-auto mb-6 sm:mb-8" />
           <p className="text-base sm:text-lg lg:text-xl text-muted-foreground max-w-3xl mx-auto leading-relaxed">
-            Express without compromise. European logistics done right.
+            {t("tagline")}
           </p>
         </div>
 
@@ -43,16 +56,10 @@ export function AboutSection() {
           {/* Who We Are */}
           <div className="text-center space-y-4">
             <h3 className="text-xl sm:text-2xl font-bold text-foreground">
-              Who We Are
+              {t("whoWeAre")}
             </h3>
             <p className="text-sm sm:text-base text-muted-foreground leading-relaxed max-w-3xl mx-auto">
-              Netherlands-based logistics company specializing in express and
-              time-critical cargo solutions across Europe. Operating{" "}
-              <span className="font-semibold text-primary">24/7</span> with{" "}
-              <span className="text-primary font-semibold">
-                speed without chaos
-              </span>
-              .
+              {t("whoWeAreText")}
             </p>
           </div>
 
@@ -61,20 +68,13 @@ export function AboutSection() {
           {/* What We Do */}
           <div className="text-center space-y-4">
             <h3 className="text-xl sm:text-2xl font-bold text-foreground">
-              What We Do
+              {t("whatWeDo")}
             </h3>
             <p className="text-sm sm:text-base text-muted-foreground mb-4 max-w-3xl mx-auto">
-              End-to-end logistics from vans to full air cargo solutions
+              {t("whatWeDoText")}
             </p>
             <div className="flex flex-wrap justify-center gap-3 text-xs sm:text-sm max-w-3xl mx-auto">
-              {[
-                "24/7 Express Transport",
-                "Air Freight (PMC)",
-                "Sea Freight",
-                "Warehousing",
-                "Customs Clearance",
-                "B2B & B2C",
-              ].map((service, index) => (
+              {services.map((service, index) => (
                 <span
                   key={index}
                   className="px-3 py-1.5 bg-gray-100 rounded-full text-muted-foreground"
@@ -91,7 +91,7 @@ export function AboutSection() {
           <div className="text-center space-y-4">
             <h3 className="text-xl sm:text-2xl font-bold text-foreground flex items-center justify-center gap-2">
               <MapPin className="h-5 w-5 text-primary" />
-              Where We Operate
+              {t("whereWeOperate")}
             </h3>
             <div className="flex flex-wrap justify-center gap-4 text-sm">
               {operatingCountries.map((country, index) => (
@@ -111,11 +111,10 @@ export function AboutSection() {
           {/* Specialized Equipment */}
           <div className="text-center space-y-4">
             <h3 className="text-xl sm:text-2xl font-bold text-foreground">
-              Specialized Equipment
+              {t("specializedEquipment")}
             </h3>
             <p className="text-sm sm:text-base text-muted-foreground max-w-2xl mx-auto">
-              Rollerbed trailers optimized for PMC air cargo units — fast
-              handling, reduced loading times, maximum safety
+              {t("equipmentText")}
             </p>
           </div>
         </div>
@@ -126,27 +125,20 @@ export function AboutSection() {
             <CardContent className="p-8 sm:p-10 text-center">
               <div className="inline-block mb-4">
                 <div className="text-xs sm:text-sm font-semibold uppercase tracking-wider text-primary mb-2">
-                  Our Mission
+                  {t("mission")}
                 </div>
               </div>
               <p className="text-base sm:text-lg lg:text-xl text-foreground leading-relaxed font-medium">
-                To deliver{" "}
-                <span className="text-primary font-bold">
-                  reliable, high-speed cargo solutions
-                </span>{" "}
-                across Europe by combining smart logistics, dedicated equipment,
-                and nonstop support —{" "}
-                <span className="font-bold">
-                  without unnecessary complexity
-                </span>
-                .
+                {t("missionText")}
               </p>
               <div className="mt-6 flex items-center justify-center gap-2 text-sm text-muted-foreground">
                 <span className="font-semibold text-secondary">
-                  When minutes matter
+                  {t("whenMinutes")}
                 </span>
                 <span>•</span>
-                <span className="font-semibold text-primary">we move</span>
+                <span className="font-semibold text-primary">
+                  {t("weMove")}
+                </span>
               </div>
             </CardContent>
           </Card>

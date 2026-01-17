@@ -25,20 +25,22 @@ import {
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { toast } from "sonner";
 import { Loader2 } from "lucide-react";
-
-const formSchema = z.object({
-  name: z.string().min(2, "Name must be at least 2 characters"),
-  email: z.string().email("Invalid email address"),
-  phone: z.string().min(10, "Please enter a valid phone number"),
-  company: z.string().optional(),
-  serviceType: z.string().min(1, "Please select a service type"),
-  message: z.string().min(10, "Message must be at least 10 characters"),
-});
-
-type FormValues = z.infer<typeof formSchema>;
+import { useTranslations } from "next-intl";
 
 export function ContactForm() {
+  const t = useTranslations("contactForm");
   const [isSubmitting, setIsSubmitting] = useState(false);
+
+  const formSchema = z.object({
+    name: z.string().min(2, t("errorMinName")),
+    email: z.string().email(t("errorInvalidEmail")),
+    phone: z.string().min(10, t("errorMinPhone")),
+    company: z.string().optional(),
+    serviceType: z.string().min(1, t("errorSelectService")),
+    message: z.string().min(10, t("errorMinMessage")),
+  });
+
+  type FormValues = z.infer<typeof formSchema>;
 
   const form = useForm<FormValues>({
     resolver: zodResolver(formSchema),
@@ -57,7 +59,7 @@ export function ContactForm() {
     // Simulate API call
     await new Promise((resolve) => setTimeout(resolve, 2000));
     console.log(data);
-    toast.success("Thank you for contacting us! We'll get back to you soon.");
+    toast.success(t("successMessage"));
     form.reset();
     setIsSubmitting(false);
   };
@@ -65,7 +67,7 @@ export function ContactForm() {
   return (
     <Card className="shadow-lg">
       <CardHeader className="pb-4 sm:pb-6">
-        <CardTitle className="text-xl sm:text-2xl">Send Us a Message</CardTitle>
+        <CardTitle className="text-xl sm:text-2xl">{t("title")}</CardTitle>
       </CardHeader>
       <CardContent className="px-4 sm:px-6">
         <Form {...form}>
@@ -80,11 +82,11 @@ export function ContactForm() {
                 render={({ field }) => (
                   <FormItem>
                     <FormLabel className="text-sm sm:text-base">
-                      Full Name *
+                      {t("fullName")} *
                     </FormLabel>
                     <FormControl>
                       <Input
-                        placeholder="John Doe"
+                        placeholder={t("fullNamePlaceholder")}
                         {...field}
                         className="h-12 text-base"
                       />
@@ -100,12 +102,12 @@ export function ContactForm() {
                 render={({ field }) => (
                   <FormItem>
                     <FormLabel className="text-sm sm:text-base">
-                      Email Address *
+                      {t("email")} *
                     </FormLabel>
                     <FormControl>
                       <Input
                         type="email"
-                        placeholder="john@example.com"
+                        placeholder={t("emailPlaceholder")}
                         {...field}
                         className="h-12 text-base"
                       />
@@ -121,11 +123,11 @@ export function ContactForm() {
                 render={({ field }) => (
                   <FormItem>
                     <FormLabel className="text-sm sm:text-base">
-                      Phone Number *
+                      {t("phone")} *
                     </FormLabel>
                     <FormControl>
                       <Input
-                        placeholder="+31 62 858 5428"
+                        placeholder={t("phonePlaceholder")}
                         {...field}
                         className="h-12 text-base"
                         type="tel"
@@ -142,11 +144,11 @@ export function ContactForm() {
                 render={({ field }) => (
                   <FormItem>
                     <FormLabel className="text-sm sm:text-base">
-                      Company Name
+                      {t("company")}
                     </FormLabel>
                     <FormControl>
                       <Input
-                        placeholder="Your Company"
+                        placeholder={t("companyPlaceholder")}
                         {...field}
                         className="h-12 text-base"
                       />
@@ -163,7 +165,7 @@ export function ContactForm() {
               render={({ field }) => (
                 <FormItem>
                   <FormLabel className="text-sm sm:text-base">
-                    Service Type *
+                    {t("serviceType")} *
                   </FormLabel>
                   <Select
                     onValueChange={field.onChange}
@@ -171,23 +173,31 @@ export function ContactForm() {
                   >
                     <FormControl>
                       <SelectTrigger className="h-12 text-base">
-                        <SelectValue placeholder="Select a service" />
+                        <SelectValue
+                          placeholder={t("serviceTypePlaceholder")}
+                        />
                       </SelectTrigger>
                     </FormControl>
                     <SelectContent>
                       <SelectItem value="air-freight">
-                        Air Freight Services
+                        {t("serviceAirFreight")}
                       </SelectItem>
-                      <SelectItem value="customs">Customs Clearance</SelectItem>
+                      <SelectItem value="customs">
+                        {t("serviceCustoms")}
+                      </SelectItem>
                       <SelectItem value="logistics">
-                        International Logistics
+                        {t("serviceLogistics")}
                       </SelectItem>
-                      <SelectItem value="insurance">Cargo Insurance</SelectItem>
-                      <SelectItem value="express">Express Delivery</SelectItem>
+                      <SelectItem value="insurance">
+                        {t("serviceInsurance")}
+                      </SelectItem>
+                      <SelectItem value="express">
+                        {t("serviceExpress")}
+                      </SelectItem>
                       <SelectItem value="supply-chain">
-                        Supply Chain Management
+                        {t("serviceSupplyChain")}
                       </SelectItem>
-                      <SelectItem value="other">Other</SelectItem>
+                      <SelectItem value="other">{t("serviceOther")}</SelectItem>
                     </SelectContent>
                   </Select>
                   <FormMessage />
@@ -201,11 +211,11 @@ export function ContactForm() {
               render={({ field }) => (
                 <FormItem>
                   <FormLabel className="text-sm sm:text-base">
-                    Message *
+                    {t("message")} *
                   </FormLabel>
                   <FormControl>
                     <Textarea
-                      placeholder="Tell us about your logistics needs..."
+                      placeholder={t("messagePlaceholder")}
                       className="min-h-[120px] sm:min-h-[150px] text-base"
                       {...field}
                     />
@@ -224,10 +234,10 @@ export function ContactForm() {
               {isSubmitting ? (
                 <>
                   <Loader2 className="mr-2 h-5 w-5 animate-spin" />
-                  Sending...
+                  {t("sending")}
                 </>
               ) : (
-                "Send Message"
+                t("sendMessage")
               )}
             </Button>
           </form>

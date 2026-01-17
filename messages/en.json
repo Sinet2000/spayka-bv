@@ -1,0 +1,202 @@
+{
+  "nav": {
+    "home": "Home",
+    "services": "Services",
+    "about": "About",
+    "whyUs": "Why Choose Us",
+    "contact": "Contact",
+    "callUs": "Call Us",
+    "contactUs": "Contact Us"
+  },
+  "topBar": {
+    "phone": "+31 62 858 5428",
+    "email": "contact@spayka.nl",
+    "location": "Heerhugowaard, NL"
+  },
+  "hero": {
+    "badge": "Express Cargo Solutions 24/7",
+    "title": "Fast, Reliable Cargo Solutions Across Europe",
+    "subtitle": "Express and time-critical logistics operating 24/7",
+    "getQuote": "Request Quote",
+    "callNow": "Call Us Now",
+    "features": {
+      "speed": {
+        "title": "Speed",
+        "description": "Express delivery within 24-48 hours"
+      },
+      "price": {
+        "title": "Best Price",
+        "description": "Competitive rates guaranteed"
+      },
+      "support": {
+        "title": "24/7 Support",
+        "description": "Always here when you need us"
+      }
+    }
+  },
+  "about": {
+    "badge": "About Us",
+    "title": "Spayka Air Cargo Solutions B.V.",
+    "tagline": "Express without compromise. European logistics done right.",
+    "whoWeAre": "Who We Are",
+    "whoWeAreText": "Netherlands-based logistics company specializing in express and time-critical cargo solutions across Europe. Operating 24/7 with speed without chaos.",
+    "whatWeDo": "What We Do",
+    "whatWeDoText": "End-to-end logistics from vans to full air cargo solutions",
+    "whereWeOperate": "Where We Operate",
+    "specializedEquipment": "Specialized Equipment",
+    "equipmentText": "Rollerbed trailers optimized for PMC air cargo units — fast handling, reduced loading times, maximum safety",
+    "mission": "Our Mission",
+    "missionText": "To deliver reliable, high-speed cargo solutions across Europe by combining smart logistics, dedicated equipment, and nonstop support — without unnecessary complexity.",
+    "whenMinutes": "When minutes matter",
+    "weMove": "we move"
+  },
+  "services": {
+    "badge": "What We Offer",
+    "title": "Our Services",
+    "subtitle": "Comprehensive logistics solutions across",
+    "expressTransport": "24/7 Express Transport",
+    "expressTransportDesc": "Fast delivery across Europe with our fleet of modern vans",
+    "airFreight": "Air Freight (PMC)",
+    "airFreightDesc": "Priority air cargo services for time-sensitive shipments",
+    "seaFreight": "Sea Freight",
+    "seaFreightDesc": "Cost-effective ocean freight for large volume shipments",
+    "warehousing": "Warehousing",
+    "warehousingDesc": "Secure storage solutions with real-time inventory tracking",
+    "customsClearance": "Customs Clearance",
+    "customsClearanceDesc": "Expert customs brokerage for smooth international trade",
+    "b2b": "B2B & B2C",
+    "b2bDesc": "Tailored logistics for businesses and consumers"
+  },
+  "whyUs": {
+    "badge": "Why Choose Us",
+    "title": "We Don't Compete on Promises",
+    "subtitle": "We compete on execution",
+    "speed": {
+      "title": "Speed",
+      "subtitle": "Time-critical means time-critical",
+      "description": "Express delivery without compromise. When every minute counts, our dedicated fleet and 24/7 operations ensure your cargo moves at the pace your business demands."
+    },
+    "price": {
+      "title": "Price",
+      "subtitle": "Competitive, transparent, no surprises",
+      "description": "Fair pricing with complete transparency. No hidden fees, no unexpected costs — just honest logistics at rates that make business sense."
+    },
+    "support": {
+      "title": "Support",
+      "subtitle": "Real people, real answers, 24/7",
+      "description": "Nonstop customer support from experienced logistics professionals. Direct communication, immediate responses, and solutions when you need them most."
+    },
+    "whenMinutes": "When minutes matter,",
+    "weMove": "we move",
+    "tagline": "Express without compromise • Speed. Control. Reliability."
+  },
+  "cta": {
+    "title": "Ready to Ship?",
+    "subtitle": "Get a quote in minutes",
+    "requestQuote": "Request Quote",
+    "callUs": "Call Us Now"
+  },
+  "contact": {
+    "pageTitle": "Contact Us",
+    "title": "Let's Move Your Cargo",
+    "subtitle": "Express and time-critical cargo solutions across Europe. Available 24/7.",
+    "operating247": "Operating 24/7",
+    "covering": "Covering 5 European Countries",
+    "servicesTitle": "Our Services",
+    "servicesSubtitle": "End-to-end logistics solutions tailored to your needs",
+    "operateAcross": "We Operate Across Europe",
+    "quoteTitle": "Request a Quote or Ask a Question",
+    "quoteSubtitle": "Our logistics experts are ready to help. Get a response within 2 hours during business hours.",
+    "ctaTitle": "Speed. Price. Support.",
+    "ctaSubtitle": "When minutes matter, we move. Time-critical cargo solutions with competitive pricing and real answers 24/7.",
+    "expressTransportDesc": "From vans to full truckloads across Europe",
+    "airFreightDesc": "Priority air cargo with rollerbed trailer operations",
+    "seaFreightDesc": "Cost-effective ocean freight for large volumes",
+    "warehousingDesc": "Secure storage with real-time inventory tracking",
+    "customsClearanceDesc": "Expert customs brokerage and Douane Loods services",
+    "b2bDesc": "Tailored solutions for business and consumer deliveries",
+    "feature1_1": "Same-day delivery",
+    "feature1_2": "Real-time tracking",
+    "feature1_3": "Dedicated drivers",
+    "feature2_1": "Fast airport handling",
+    "feature2_2": "Airline partnerships",
+    "feature2_3": "Time-critical solutions",
+    "feature3_1": "FCL & LCL options",
+    "feature3_2": "Port-to-port service",
+    "feature3_3": "Competitive rates",
+    "feature4_1": "Climate controlled",
+    "feature4_2": "24/7 access",
+    "feature4_3": "Flexible terms",
+    "feature5_1": "Fast processing",
+    "feature5_2": "Compliance support",
+    "feature5_3": "Documentation handling",
+    "feature6_1": "Flexible scheduling",
+    "feature6_2": "Last-mile delivery",
+    "feature6_3": "Returns management",
+    "countriesTagline": "From short-haul express to cross-border critical shipments",
+    "expressNoCompromise": "Express without compromise",
+    "transparentPricing": "Transparent pricing",
+    "realPeople": "Real people, real answers"
+  },
+  "contactInfo": {
+    "title": "Contact Information",
+    "subtitle": "We're here to help with your logistics needs. Reach out anytime — our team operates 24/7 for time-critical shipments.",
+    "call247": "Call Us 24/7",
+    "email": "Email Us",
+    "visitOffice": "Visit Our Office",
+    "availability": "Availability",
+    "operations247": "24/7 Operations",
+    "emergencySupport": "Emergency support available",
+    "urgentSupport": "Need Urgent Support?",
+    "urgentText": "For time-critical and emergency shipments, call us immediately:",
+    "available247": "Available 24 hours a day, 7 days a week"
+  },
+  "contactForm": {
+    "title": "Send Us a Message",
+    "fullName": "Full Name",
+    "fullNamePlaceholder": "John Doe",
+    "email": "Email Address",
+    "emailPlaceholder": "john@example.com",
+    "phone": "Phone Number",
+    "phonePlaceholder": "+31 62 858 5428",
+    "company": "Company Name",
+    "companyPlaceholder": "Your Company",
+    "serviceType": "Service Type",
+    "serviceTypePlaceholder": "Select a service",
+    "message": "Message",
+    "messagePlaceholder": "Tell us about your logistics needs...",
+    "sendMessage": "Send Message",
+    "sending": "Sending...",
+    "successMessage": "Thank you for contacting us! We'll get back to you soon.",
+    "errorMinName": "Name must be at least 2 characters",
+    "errorInvalidEmail": "Invalid email address",
+    "errorMinPhone": "Please enter a valid phone number",
+    "errorSelectService": "Please select a service type",
+    "errorMinMessage": "Message must be at least 10 characters",
+    "serviceAirFreight": "Air Freight Services",
+    "serviceCustoms": "Customs Clearance",
+    "serviceLogistics": "International Logistics",
+    "serviceInsurance": "Cargo Insurance",
+    "serviceExpress": "Express Delivery",
+    "serviceSupplyChain": "Supply Chain Management",
+    "serviceOther": "Other"
+  },
+  "footer": {
+    "company": "Spayka Air Cargo Solutions",
+    "description": "Express and time-critical cargo solutions across Europe.",
+    "operating247": "Operating 24/7",
+    "quickLinks": "Quick Links",
+    "services": "Services",
+    "getInTouch": "Get In Touch",
+    "copyright": "Spayka Air Cargo Solutions B.V.",
+    "developed": "Developed by",
+    "dexlaris": "Dexlaris"
+  },
+  "countries": {
+    "netherlands": "Netherlands",
+    "belgium": "Belgium",
+    "luxembourg": "Luxembourg",
+    "germany": "Germany",
+    "france": "France"
+  }
+}
