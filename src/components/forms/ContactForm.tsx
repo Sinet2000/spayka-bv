@@ -125,7 +125,7 @@ export function ContactForm() {
                     </FormLabel>
                     <FormControl>
                       <Input
-                        placeholder="+31 20 123 4567"
+                        placeholder="+31 62 858 5428"
                         {...field}
                         className="h-12 text-base"
                         type="tel"

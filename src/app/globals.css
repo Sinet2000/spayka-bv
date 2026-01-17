@@ -59,10 +59,10 @@
   --popover: oklch(1 0 0);
   --popover-foreground: oklch(0.145 0 0);
   /* Orange - from Spayka logo */
-  --primary: oklch(0.68 0.19 40);
+  --primary: oklch(0.5543 0.2218 30.07);
   --primary-foreground: oklch(1 0 0);
   /* Navy Blue - from Spayka logo */
-  --secondary: oklch(0.25 0.08 255);
+  --secondary: oklch(0.2821 0.1812 272.32);
   --secondary-foreground: oklch(1 0 0);
   --muted: oklch(0.97 0 0);
   --muted-foreground: oklch(0.556 0 0);
@@ -72,15 +72,15 @@
   --destructive: oklch(0.577 0.245 27.325);
   --border: oklch(0.922 0 0);
   --input: oklch(0.922 0 0);
-  --ring: oklch(0.68 0.19 40);
-  --chart-1: oklch(0.68 0.19 40);
-  --chart-2: oklch(0.25 0.08 255);
+  --ring: oklch(0.5543 0.2218 30.07);
+  --chart-1: oklch(0.5543 0.2218 30.07);
+  --chart-2: oklch(0.2821 0.1812 272.32);
   --chart-3: oklch(0.55 0.18 245);
   --chart-4: oklch(0.828 0.189 84.429);
   --chart-5: oklch(0.769 0.188 70.08);
   --sidebar: oklch(0.985 0 0);
   --sidebar-foreground: oklch(0.145 0 0);
-  --sidebar-primary: oklch(0.68 0.19 40);
+  --sidebar-primary: oklch(0.5543 0.2218 30.07);
   --sidebar-primary-foreground: oklch(1 0 0);
   --sidebar-accent: oklch(0.97 0 0);
   --sidebar-accent-foreground: oklch(0.205 0 0);
@@ -203,5 +203,22 @@
     padding-right: env(safe-area-inset-right);
     padding-top: env(safe-area-inset-top);
     padding-bottom: env(safe-area-inset-bottom);
+  }
+
+  /* Fade in up animation */
+  @keyframes fade-in-up {
+    from {
+      opacity: 0;
+      transform: translateY(30px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+
+  .animate-fade-in-up {
+    animation: fade-in-up 0.8s ease-out forwards;
+    opacity: 0;
   }
 }

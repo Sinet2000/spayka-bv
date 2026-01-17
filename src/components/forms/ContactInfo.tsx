@@ -8,16 +8,16 @@ const contactInfo = [
     icon: MapPin,
     title: "Visit Us",
     details: [
-      "Cargo Terminal 2",
-      "Schiphol Airport",
-      "1118 CP Amsterdam",
+      "Tilly de Vriestuin 7",
+      "1705 HL",
+      "Heerhugowaard",
       "Netherlands",
     ],
   },
   {
     icon: Phone,
     title: "Call Us",
-    details: ["+31 20 777 1234", "Mon-Fri: 8:00 AM - 6:00 PM"],
+    details: ["+31 62 858 5428", "Mon-Fri: 09:00 - 18:00"],
   },
   {
     icon: Mail,
@@ -27,11 +27,7 @@ const contactInfo = [
   {
     icon: Clock,
     title: "Business Hours",
-    details: [
-      "Monday - Friday: 8:00 AM - 6:00 PM",
-      "Saturday: 9:00 AM - 2:00 PM",
-      "Sunday: Closed",
-    ],
+    details: ["Monday - Friday: 09:00 - 18:00"],
   },
 ];
 
@@ -77,7 +73,7 @@ export function ContactInfo() {
           <p className="mb-2">
             For urgent shipments and 24/7 emergency support:
           </p>
-          <p className="text-xl font-bold">+31 20 777 9999</p>
+          <p className="text-xl font-bold">+31 62 858 5428</p>
         </CardContent>
       </Card>
     </div>

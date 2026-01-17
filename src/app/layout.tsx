@@ -19,8 +19,8 @@ const jakarta = Plus_Jakarta_Sans({
 
 export const metadata: Metadata = {
   title: {
-    default: "Spayka Air Cargo Solutions - Reliable Air Freight Logistics",
-    template: "%s | Spayka Air Cargo Solutions",
+    default: "Spayka Air Cargo Solutions B.V. - Reliable Air Freight Logistics",
+    template: "%s | Spayka Air Cargo Solutions B.V.",
   },
   description:
     "Leading air cargo logistics provider based at Schiphol Airport, Amsterdam. Fast, reliable, and cost-effective air freight services worldwide.",
@@ -37,15 +37,15 @@ export const metadata: Metadata = {
     "supply chain",
     "customs clearance",
   ],
-  authors: [{ name: "Spayka BV" }],
-  creator: "Spayka Air Cargo Solutions",
-  publisher: "Spayka BV",
+  authors: [{ name: "Spayka B.V." }],
+  creator: "Spayka Air Cargo Solutions B.V.",
+  publisher: "Spayka B.V.",
   metadataBase: new URL("https://spayka.nl"),
   manifest: "/manifest.json",
   appleWebApp: {
     capable: true,
     statusBarStyle: "default",
-    title: "Spayka Air Cargo",
+    title: "Spayka Air Cargo Solutions B.V.",
   },
   formatDetection: {
     telephone: true,
@@ -56,14 +56,14 @@ export const metadata: Metadata = {
     type: "website",
     locale: "en_US",
     url: "https://spayka.nl",
-    title: "Spayka Air Cargo Solutions - Reliable Air Freight Logistics",
+    title: "Spayka Air Cargo Solutions B.V. - Reliable Air Freight Logistics",
     description:
       "Leading air cargo logistics provider based at Schiphol Airport, Amsterdam.",
-    siteName: "Spayka Air Cargo Solutions",
+    siteName: "Spayka Air Cargo Solutions B.V.",
   },
   twitter: {
     card: "summary_large_image",
-    title: "Spayka Air Cargo Solutions",
+    title: "Spayka Air Cargo Solutions B.V.",
     description:
       "Leading air cargo logistics provider based at Schiphol Airport, Amsterdam.",
   },
