@@ -22,11 +22,11 @@ export function Footer() {
           <div className="sm:col-span-2 lg:col-span-1">
             <div className="flex items-center gap-3 mb-4">
               <Image
-                src="/logo/spayka_logo.png"
+                src="/logo/spayka_logo.svg"
                 alt="Spayka Logo"
                 width={60}
                 height={63}
-                className="h-14 w-auto"
+                className="h-28 w-auto"
               />
               <h3 className="font-bold text-lg text-white">{t("company")}</h3>
             </div>

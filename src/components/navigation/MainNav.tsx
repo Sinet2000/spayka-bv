@@ -11,56 +11,65 @@ export function MainNav() {
   const t = useTranslations("nav");
   const tTopBar = useTranslations("topBar");
   return (
-    <nav className="sticky top-0 z-50 bg-background/95 backdrop-blur-md border-b shadow-sm">
-      <div className="container mx-auto px-4 py-3 sm:py-4">
+    <nav className="sticky top-0 z-50 bg-white/95 backdrop-blur-xl border-b border-slate-200/80 shadow-lg shadow-slate-900/5">
+      <div className="container mx-auto px-4 py-2.5 sm:py-3">
         <div className="flex items-center justify-between gap-4">
           {/* Logo */}
-          <Link href="/" className="flex items-center gap-3">
-            <Image
-              src="/logo/spayka_min.svg"
-              alt="Spayka Logo"
-              width={380}
-              height={171}
-              className="h-12 w-auto sm:h-20"
-              priority
-            />
+          <Link href="/" className="flex items-center gap-3 group">
+            <div className="relative transition-all duration-300 group-hover:scale-110">
+              <Image
+                src="/logo/spayka_logo.svg"
+                alt="Spayka Logo"
+                width={380}
+                height={171}
+                className="h-12 w-auto sm:h-16 transition-all duration-300"
+                priority
+              />
+              {/* Subtle glow effect on hover */}
+              <div className="absolute inset-0 bg-primary/20 blur-xl opacity-0 group-hover:opacity-100 transition-opacity duration-300 -z-10" />
+            </div>
           </Link>
 
           {/* Right Side - Actions */}
-          <div className="flex items-center gap-2 sm:gap-4">
+          <div className="flex items-center gap-2 sm:gap-3">
             {/* Language Selector */}
             <LanguageSelector />
 
-            {/* Call Us Button - Hidden on small mobile */}
+            {/* Call Us Button - Desktop */}
             <a href="tel:+31628585428" className="hidden sm:block">
               <Button
                 variant="outline"
-                className="gap-2 border-red-500 text-red-500 hover:bg-red-50 hover:text-red-600 hover:border-red-600 min-h-[44px] shadow-sm"
+                className="relative overflow-hidden gap-2 border-2 border-primary/30 text-primary hover:bg-primary/5 hover:text-primary hover:border-primary/50 min-h-[40px] transition-all duration-300 font-semibold group"
               >
-                <Phone className="h-4 w-4" />
+                <Phone className="h-4 w-4 group-hover:rotate-12 transition-transform" />
                 <span className="hidden md:inline">{tTopBar("phone")}</span>
                 <span className="md:hidden">{t("callUs")}</span>
+                {/* Animated underline */}
+                <span className="absolute bottom-0 left-0 w-0 h-0.5 bg-primary group-hover:w-full transition-all duration-300" />
               </Button>
             </a>
 
-            {/* Call Us - Mobile Only (Icon) */}
+            {/* Call Us - Mobile Only */}
             <a href="tel:+31628585428" className="sm:hidden">
               <Button
                 size="sm"
                 variant="outline"
-                className="min-h-[44px] min-w-[44px] border-red-500 text-red-500 hover:bg-red-50"
+                className="min-h-[40px] min-w-[40px] border-2 border-primary/30 text-primary hover:bg-primary/5 hover:border-primary/50 transition-all"
               >
-                <Phone className="h-5 w-5" />
+                <Phone className="h-4 w-4" />
                 <span className="sr-only">{t("callUs")}</span>
               </Button>
             </a>
 
-            {/* Contact Us Button */}
+            {/* Contact Us Button - Primary CTA */}
             <Link href="/contact">
-              <Button className="gap-2 bg-red-600 hover:bg-red-700 text-white shadow-md hover:shadow-lg transition-all min-h-[44px]">
-                <MessageSquare className="h-4 w-4" />
-                <span className="hidden sm:inline">{t("contactUs")}</span>
-                <span className="sm:hidden">{t("contact")}</span>
+              <Button className="relative overflow-hidden gap-2 bg-gradient-to-r from-primary to-blue-600 hover:from-blue-600 hover:to-primary text-white shadow-lg shadow-primary/30 hover:shadow-xl hover:shadow-primary/40 transition-all duration-300 min-h-[40px] font-semibold group">
+                <span className="absolute inset-0 bg-white/20 translate-x-[-100%] group-hover:translate-x-[100%] transition-transform duration-700" />
+                <MessageSquare className="h-4 w-4 relative z-10 group-hover:scale-110 transition-transform" />
+                <span className="hidden sm:inline relative z-10">
+                  {t("contactUs")}
+                </span>
+                <span className="sm:hidden relative z-10">{t("contact")}</span>
               </Button>
             </Link>
           </div>
