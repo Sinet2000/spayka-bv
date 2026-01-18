@@ -82,24 +82,24 @@ export function HeroSection() {
             {t("subtitle")}
           </p>
 
-          {/* Key Features - Enhanced Glassy Cards */}
+          {/* Key Features - Ultra Transparent Glassy Cards */}
           <div className="grid grid-cols-1 sm:grid-cols-3 gap-3 sm:gap-5 max-w-5xl mx-auto mb-6 sm:mb-8 px-4 animate-fade-in-up animation-delay-300">
             {keyFeatures.map((feature, index) => {
               const Icon = feature.icon;
               const gradients = [
-                "from-blue-500/30 to-primary/30",
-                "from-red-500/30 to-secondary/30",
-                "from-blue-600/30 to-cyan-600/30",
+                "from-blue-500/20 to-primary/20",
+                "from-red-500/20 to-secondary/20",
+                "from-blue-600/20 to-cyan-600/20",
               ];
               const glowColors = [
-                "shadow-blue-500/40",
-                "shadow-red-500/40",
-                "shadow-blue-600/40",
+                "shadow-blue-500/30",
+                "shadow-red-500/30",
+                "shadow-blue-600/30",
               ];
               return (
                 <div
                   key={index}
-                  className={`relative group bg-white/5 backdrop-blur-2xl border-2 border-white/20 rounded-2xl p-5 sm:p-6 hover:bg-white/10 hover:border-white/40 transition-all duration-500 hover:scale-[1.08] hover:shadow-2xl ${glowColors[index]} hover:-translate-y-1`}
+                  className={`relative group bg-white/[0.03] backdrop-blur-xl border border-white/10 rounded-2xl p-5 sm:p-6 hover:bg-white/[0.08] hover:border-white/25 transition-all duration-500 hover:scale-[1.08] hover:shadow-2xl ${glowColors[index]} hover:-translate-y-1`}
                 >
                   {/* Gradient background on hover */}
                   <div
