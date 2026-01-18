@@ -17,11 +17,11 @@ export function MainNav() {
           {/* Logo */}
           <Link href="/" className="flex items-center gap-3">
             <Image
-              src="/logo/spayka_logo.png"
+              src="/logo/spayka_logo.svg"
               alt="Spayka Logo"
-              width={48}
-              height={50}
-              className="h-10 w-auto sm:h-12"
+              width={380}
+              height={171}
+              className="h-12 w-auto sm:h-20"
               priority
             />
           </Link>

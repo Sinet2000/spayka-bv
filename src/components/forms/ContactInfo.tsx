@@ -47,19 +47,19 @@ export function ContactInfo() {
             <Card
               key={index}
               className={
-                info.highlight ? "border-2 border-red-400/30 bg-red-400/5" : ""
+                info.highlight ? "border-2 border-primary/30 bg-primary/5" : ""
               }
             >
               <CardContent className="p-5 sm:p-6">
                 <div className="flex gap-4">
                   <div
                     className={`w-12 h-12 rounded-lg flex items-center justify-center flex-shrink-0 ${
-                      info.highlight ? "bg-red-400/20" : "bg-slate-100"
+                      info.highlight ? "bg-primary/20" : "bg-slate-100"
                     }`}
                   >
                     <Icon
                       className={`h-6 w-6 ${
-                        info.highlight ? "text-red-400" : "text-slate-700"
+                        info.highlight ? "text-primary" : "text-slate-700"
                       }`}
                     />
                   </div>
@@ -90,8 +90,8 @@ export function ContactInfo() {
       <Card className="bg-slate-900 text-white border-slate-800">
         <CardContent className="p-5 sm:p-6">
           <div className="flex items-start gap-3">
-            <div className="w-10 h-10 bg-red-400/20 rounded-lg flex items-center justify-center flex-shrink-0">
-              <Clock className="h-5 w-5 text-red-400" />
+            <div className="w-10 h-10 bg-primary/20 rounded-lg flex items-center justify-center flex-shrink-0">
+              <Clock className="h-5 w-5 text-primary" />
             </div>
             <div>
               <h3 className="font-semibold text-base sm:text-lg mb-2">
@@ -100,7 +100,7 @@ export function ContactInfo() {
               <p className="text-sm sm:text-base text-slate-300 mb-3">
                 {t("urgentText")}
               </p>
-              <p className="text-xl sm:text-2xl font-bold text-red-400">
+              <p className="text-xl sm:text-2xl font-bold text-primary">
                 {tTopBar("phone")}
               </p>
               <p className="text-xs sm:text-sm text-slate-400 mt-2">

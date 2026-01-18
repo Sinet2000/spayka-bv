@@ -39,7 +39,8 @@ export function CTASection() {
           <Link href="/contact" className="w-full sm:w-auto group">
             <Button
               size="lg"
-              className="w-full sm:w-auto gap-2 bg-white text-primary hover:bg-white hover:scale-105 text-sm sm:text-lg px-6 sm:px-10 min-h-[44px] sm:min-h-[60px] shadow-2xl hover:shadow-white/50 transition-all duration-300 font-semibold cursor-pointer"
+              variant="outline"
+              className="w-full sm:w-auto gap-2 bg-transparent hover:bg-sky-500/10 text-white border-2 border-sky-500 hover:border-sky-400 hover:scale-105 text-sm sm:text-lg px-6 sm:px-10 min-h-[44px] sm:min-h-[60px] shadow-2xl hover:shadow-sky-500/50 transition-all duration-300 font-semibold cursor-pointer"
             >
               {t("requestQuote")}
               <ArrowRight className="h-4 w-4 sm:h-5 sm:w-5 group-hover:translate-x-1 transition-transform" />

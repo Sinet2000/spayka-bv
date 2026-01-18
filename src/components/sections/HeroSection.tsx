@@ -42,16 +42,17 @@ export function HeroSection() {
   ];
   return (
     <>
-      <section className="relative min-h-[600px] sm:min-h-[650px] lg:min-h-[700px] flex items-center justify-center overflow-hidden pt-20 sm:pt-0">
+      <section className="relative min-h-[650px] sm:min-h-[700px] lg:min-h-[800px] flex items-center justify-center overflow-hidden pt-20 sm:pt-0">
         {/* Background Image */}
         <div className="absolute inset-0 z-0">
           <Image
-            src="/media/spayka-group.jpeg"
+            src="/media/gen-spayka-featured-2.jpeg"
             alt="Air Cargo"
             fill
-            className="object-cover brightness-[0.4]"
+            className="object-cover object-center brightness-[0.4]"
             priority
-            quality={90}
+            quality={100}
+            sizes="100vw"
           />
         </div>
 
