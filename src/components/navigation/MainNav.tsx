@@ -17,7 +17,7 @@ export function MainNav() {
           {/* Logo */}
           <Link href="/" className="flex items-center gap-3">
             <Image
-              src="/logo/spayka_logo.svg"
+              src="/logo/spayka_min.svg"
               alt="Spayka Logo"
               width={380}
               height={171}
