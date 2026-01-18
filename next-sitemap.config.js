@@ -6,12 +6,12 @@ module.exports = {
   exclude: ["/api/*", "/server-sitemap.xml"],
   alternateRefs: [
     {
-      href: "https://spayka.nl",
-      hreflang: "en",
-    },
-    {
       href: "https://spayka.nl/nl",
       hreflang: "nl",
+    },
+    {
+      href: "https://spayka.nl/en",
+      hreflang: "en",
     },
     {
       href: "https://spayka.nl/de",
@@ -30,7 +30,7 @@ module.exports = {
       hreflang: "zh",
     },
     {
-      href: "https://spayka.nl",
+      href: "https://spayka.nl/nl",
       hreflang: "x-default",
     },
   ],
