@@ -1,6 +1,14 @@
-# *
+# Spayka Air Cargo Solutions - Robots.txt
+# Allow all crawlers
 User-agent: *
 Allow: /
+
+# Disallow admin or private paths (if any)
+# Disallow: /api/
+# Disallow: /admin/
+
+# Crawl-delay (optional, only if needed)
+# Crawl-delay: 1
 
 # Host
 Host: https://spayka.nl
